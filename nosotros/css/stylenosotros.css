@@ -1,4 +1,5 @@
 *{
+    font-family:"https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet";
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+
 }
 header {
     background-color: #273037; 
@@ -77,7 +79,6 @@ nav {
     opacity: 1; 
     background-position: 100% 50%; 
 }
-
 /*DEBAJO DEL NAV*/
 .imagen-blanca-con-lineas {
     position: relative;
@@ -104,11 +105,6 @@ nav {
     margin-top: 0.5rem;
     text-align: justify;
 }
-
-
-
-
-
 /*NUESTRO COMPROMISO*/
 .compromiso-section {
     background-color: #273037; 
@@ -221,19 +217,9 @@ nav {
 /*EXCELENCIA Y ATENCION fondo blanco */
 .servicios-section {
     padding: 50px 20px;
-    background-color: #ffffff;
+    background-image: url(/nosotros/images/fondoBlancoLineas.png);
     position: relative;
     overflow: hidden;
-}
-.servicios-section img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.1;
-    z-index: 1;
 }
 .servicios-container {
     max-width: 900px;
@@ -241,11 +227,11 @@ nav {
     position: relative;
     z-index: 2; 
     text-align: center;
-    color: #333;
+    color: #273037;
 }
 .servicios-container h2 {
     font-size: 24px;
-    color: #000;
+    color: #273037;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -268,24 +254,19 @@ nav {
     z-index: 1;
 }
 .servicios-container {
-    max-width: 900px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 2; 
-    text-align: center;
-    color: #333;
+    color: #273037; 
+    width: 80%;
 }
 .servicios-container h2 {
-    font-size: 24px;
-    color: #000;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 2.5rem; 
+    margin-bottom: 0.5rem;
+    text-align: start;
 }
 .servicios-container p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    color: #555;
+    font-size: 1rem; 
+    margin-top: 0.5rem;
+    font-weight: bold;
+    text-align: start;
 }
 .servicios-list {
     margin-top: 30px;
@@ -293,86 +274,102 @@ nav {
 .servicio-item {
     margin-bottom: 20px;
     padding: 15px;
-    background-color: #1e1e1e;
+    background-color: #273037;
     color: #ffffff;
     border-left: 6px solid #d4af37; 
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.servicio-item h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: #d4af37; 
+.servicio-item h3 { 
+    font-size: 18px;  
+    font-weight: bold; 
+    color: #ffffff; 
+    display: inline;
+    margin: 0;
+} 
+.servicio-item p { 
+    font-size: 14px; 
+    line-height: 1.5; 
+    color: #eee; 
+    display: inline;
+    margin: 0;
+    text-align: start;
 }
-.servicio-item p {
-    font-size: 14px;
-    line-height: 1.5;
-    color: #eee;
-}
-
 /*INFO CEO*/
 .ceo-section {
-    position: relative;
     width: 100vw; 
-    padding: 60px 20px;
-    background-color: #273037; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; 
+    padding: 50px 20px;
+    background-color: #273037;  
 }
 .ceo-container {
-    position: relative;
     max-width: 1200px;
-    width: 100%;
+    margin: 0;
     text-align: center;
     color: #273037; 
 }
-.ceo-container h2, .ceo-container h3, .ceo-container h4, .ceo-container p {
+.ceo-container h2, 
+.ceo-container h3, 
+.ceo-container h4 {
+    text-align: left;
     color: #ffffff; 
-    margin-bottom: 20px;
+    margin-left: 0;
+}
+.ceo-container p { 
+    text-align: justify;
+    color: #ffffff; 
+    line-height: 1.6;
+    margin: 20px 0; 
 }
 .ceo-container h2 {
     font-size: 2.5rem; 
 }
 .ceo-container h3 {
-    font-size: 2rem; 
+    font-size: 1.5rem; 
 }
 .ceo-container h4 {
     font-size: 1.5rem; 
 }
+/*VANINA*/
 .ceo-vanina {
     display: flex;
-    align-items: center;
-    max-width: 1200px; 
+    align-items: flex-start;
+    max-width: 1200px;
     width: 100%;
     margin-top: 40px;
 }
-.ceo-img {
-    width: 200px;
+.ceo-img { 
+    max-width: 200px;
     height: auto;
-    border-radius: 10px;
-    margin-right: 20px;
+    position: relative; 
+    margin-right: 20px; 
+    padding: 10px; 
+    border-radius: 10px; 
+    background: rgba(40, 39, 39, 0.5);
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
 }
-.ceo-texto {
+.nombre {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+}
+.Vanina {
     text-align: left;
     color: white;
     border: 1px solid white;
     border-radius: 10px;
     padding: 10px;
+    flex: 1;
 }
-.ceo-texto h3 {
-    text-align: left;
-    color: white;
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-.ceo-texto p {
+.Vanina p {
     font-size: 1rem;
     line-height: 1.6;
+    text-align: justify;
+    margin: 0; 
 }
+/*MAPA*/
 .ubicacion {
     text-align: center;
     max-width: 1200px;
@@ -380,114 +377,75 @@ nav {
     margin-top: 40px;
 }
 .ubicacion h2 {
+    text-align: start;
     font-size: 2.5rem;
     color: white; 
     margin-bottom: 20px;
 }
 .ubicacion p {
+    text-align: start;
     font-size: 1.2rem;
     color: white; 
     margin-bottom: 20px;
 }
 .map-img {
     width: 100%; 
-    height: 450px; 
+    height: 600px; 
     border: none;  
-    border-radius: 10px;
-}
-.contacto {
-    text-align: center;
-    padding: 40px 20px;
-    color: #273037;
-}
-.contacto {
-    max-width: 800px;
+    border-radius: 2px;
+    display: block;
     margin: 0 auto;
 }
-
+/*PARA CONTACTARSE*/
+.contacto {
+    background-image: url(/nosotros/images/fondoBlancoLineas.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+    color: #273037;
+    padding: 20px;
+}
+.text-contacto{
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+}
 .contacto h2 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    text-align: center;
 }
-
 .contacto p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    line-height: 1.6;
+    text-align: justify;
 }
-
-.contact-button {
-    font-size: 1.2rem;
-    color: #fdfdfd;
-    background-color: #273037;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+.contact-button { 
+    display: block; 
+    margin: 20px auto; 
+    padding: 10px 20px; 
+    font-size: 1.2rem; 
+    color: white; 
+    background-color: #273037; 
+    border: none; 
+    border-radius: 5px; 
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
 }
-
 .contact-button:hover {
     color: #f0c26c;
-}
-
-
-
-/* Ajustes para dispositivos móviles */
+}/* Ajustes para dispositivos móviles */
 @media (max-width: 768px) {
-    header .container-header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .menu {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .imagen-blanca-con-lineas img,
-    .compromiso-section img,
-    .mision-estrategia-section img {
-        width: 100%;
-        height: auto;
-    }
-    .compromiso-container,
-    .mision-estrategia-container {
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .textocompromiso,
-    .textmision {
-        padding: 0 10px;
-    }
-    .ceo-vanina {
-        flex-direction: column;
-        text-align: center;
-    }
-    iframe {
-        width: 100%;
-        height: 300px;
-    }
 }
 /* Diseño para pantallas grandes (≥1025px) */
 @media (min-width: 1025px) {
-    header .container-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-    }
-    .menu {
-        display: flex;
-        gap: 20px;
-    }
-    .compromiso-container,
-    .mision-estrategia-container {
-        display: flex;
-        align-items: flex-start;
-        gap: 20px;
-    }
-    iframe {
-        width: 600px;
-        height: 450px;
-    }
+
 }
