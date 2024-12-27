@@ -326,14 +326,19 @@ nav {
     line-height: 1.6;
     color: white;
 }
+
 /* Sección de NEWS */
 .news-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
     position: relative;
     padding: 60px 20px; 
     background: url('/inicio/images/dubai-tower-arab-khalifa-burj-emirates-city-architecture-skyscraper-transformed.jpeg') no-repeat center top;
     background-size: 100%; 
 }
-
 .news-section::before {
     content: '';
     position: absolute;
@@ -341,30 +346,26 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Color negro con 50% de transparencia */
-    z-index: 1; /* Asegura que esté encima del fondo pero debajo del contenido */
-    pointer-events: none; /* Permite interactuar con los elementos debajo del pseudo-elemento */
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+    pointer-events: none; 
 }
-
 .news-section .content {
     position: relative;
-    z-index: 2; /* Asegura que el contenido esté encima del pseudo-elemento */
+    z-index: 2; 
 }
-
 .logonews {
     position: relative;
     width: 200px; 
     height: auto; 
-    margin-bottom: 20px;
     z-index: 1;
+    margin-right: 20px;
 }
 .news-section h1 {
     font-size: 3em; 
     font-weight: bold;
     text-align: left;
-    color: #ffffff; 
-    margin-top: 60px;
-    margin-bottom: 20px;
+    color: #ffffff;
     z-index: 1; 
     position: relative;
 }
@@ -375,15 +376,21 @@ nav {
     z-index: 2; 
     position: relative;
 }
+.news-articles-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 45px;
+}
 .text-tarjeta { 
     width: 18rem;
     height: 18rem;
-    background-image: linear-gradient(to top, white, rgba(255,255,255,0)), url(/inicio/images/foto\ vanina\ noticia\ 2.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: end;
     position: relative;
+    z-index: 2;
 }  
 .text-tarjeta::before,.text-tarjeta::after {
     content: "";
@@ -405,6 +412,8 @@ nav {
 }
 .text-tarjeta p { 
     color: black;
+    line-height: 1;
+    font-size: large;
 } 
 .text-tarjeta a {
     width: 18rem;
@@ -412,91 +421,19 @@ nav {
     position: absolute;
     z-index: 1;
 }
-.text-tarjeta1 { 
-    width: 18rem;
-    height: 18rem;
+.news-image1{ 
+    background-image: linear-gradient(to top, white, rgba(255,255,255,0)), url(/inicio/images/foto\ vanina\ noticia\ 2.jpeg);
+}  
+.news-image2 { 
     background-image: linear-gradient(to top, white, rgba(255,255,255,0)), url(/inicio/images/dubai\ foto\ noticia.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: end;
-    position: relative;
 }  
-.text-tarjeta1::before,.text-tarjeta::after {
-    content: "";
-    position: absolute;
-    background-color: #d4af37;
-}
-.text-tarjeta1::before{
-    bottom: -10px;
-    left: -10px;
-    width: 10px;
-    height: 90%;
-}
-.text-tarjeta1::after{
-    bottom: -10px;
-    left: 0;
-    width: 90%;
-    height: 10px;
-    background: linear-gradient(to left, white,#f0c26c,#d4af37)
-}
-.text-tarjeta1 p { 
-    color: black;
-} 
-.text-tarjeta1 a {
-    width: 18rem;
-    height: 18rem;
-    position: absolute;
-    z-index: 1;
-}
-.text-tarjeta2 { 
-    width: 18rem;
-    height: 18rem;
+.news-image3{
     background-image: linear-gradient(to top, white, rgba(255,255,255,0)), url(/inicio/images/vanina\ -noticia.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: end;
-    position: relative;
-}  
-.text-tarjeta2::before,.text-tarjeta::after {
-    content: "";
-    position: absolute;
-    background-color: #d4af37;
-}
-.text-tarjeta2::before{
-    bottom: -10px;
-    left: -10px;
-    width: 10px;
-    height: 90%;
-}
-.text-tarjeta2::after{
-    bottom: -10px;
-    left: 0;
-    width: 90%;
-    height: 10px;
-    background: linear-gradient(to left, white,#f0c26c,#d4af37)
-}
-.text-tarjeta2 p { 
-    color: black;
-} 
-.text-tarjeta2 a {
-    width: 18rem;
-    height: 18rem;
-    position: absolute;
-    z-index: 1;
-}
-.news-articles-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
 }
 
 
 /*FAQ´S*/
 .faq {
-    padding: 40px 20px;
     color: #ffffff; 
     border-radius: 10px; 
     max-width: 1200px;
@@ -504,10 +441,12 @@ nav {
     z-index: 1;
 }
 .faq h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #ffffff; 
+    font-size: 3em; 
+    font-weight: bold;
+    text-align: left;
+    color: #ffffff;
+    z-index: 1; 
+    position: relative; 
 }
 .faq p {
     font-size: 1.1em;
@@ -526,7 +465,7 @@ nav {
     padding: 20px;
 }
 .faq-item {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.545);
     border: 2px solid transparent; 
     border-radius: 10px; 
     padding: 20px;
@@ -560,7 +499,7 @@ nav {
 }
 .faq-item button {
     align-self: flex-start; 
-    background-color: #000000; 
+    background-color: #868282a3; 
     color: #ffffff;
     border: none;
     border-radius: 5px;
