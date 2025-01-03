@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #273037; 
+    padding: 1rem 0;
+}
+/*NAV*/
+.container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 15px;
+}
+.logo {
+    height: 50px; 
+    padding-left: 25px;
+}
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+}
+.menu {
+    list-style: none; 
+    padding-right: 200px;
+    margin: 0;
+    display: flex; 
+    gap: 2.5rem; 
+}
+.menu li {
+    display: inline-block;
+    position: relative; 
+}
+.menu a li {
+    text-decoration: none; 
+    color: #ffffff; 
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem; 
+    font-weight:500; 
+    padding: 0.5rem 1rem; 
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+.menu li a:hover {
+    color: #f0c26c; 
+}
+.menu li::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px; 
+    padding: 2px; 
+    background: linear-gradient(135deg, #d4af37, #f0c26c, #d4af37, #f0e68c, #d4af37); 
+    background-size: 300%; 
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); 
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); 
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    transition: opacity 0.3s ease, background-position 0.5s ease; 
+    background-position: 0% 50%; 
+    opacity: 0;
+}
+.menu li:hover::before {
+    opacity: 1; 
+    background-position: 100% 50%; 
+}
+
+
+/*CUATRO RECUADROS*/
+.servicios-section {
+    background-image: url(/servicios/images/fondolineas.png);
+    padding: 40px 20px;
+    text-align: center;
+}
+.servicios-section h2 {
+    font-size: 2.5rem;
+    color: #333; /* Color del texto */
+    margin-bottom: 20px;
+}
+.servicios-section p {
+    font-size: 1.2rem;
+    color: #666; /* Color del texto */
+    margin-bottom: 40px;
+}
+.servicios-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.servicio {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 45%; /* Toma el 45% del contenedor */
+    max-width: 45%; /* Máximo ancho del 45% */
+    text-align: left;
+}
+.servicio h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+.servicio p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/*RECUADRO AZUL Y BLANCO*/
+.custom-section {
+    background-color: #f4f4f4; /* Fondo gris claro */
+    padding: 40px 20px;
+    text-align: center;
+}
+.custom-title {
+    font-size: 2.5rem;
+    color: #333; /* Color del texto */
+    margin-bottom: 20px;
+}
+.custom-description {
+    font-size: 1.2rem;
+    color: #666; /* Color del texto */
+    margin-bottom: 40px;
+}
+.custom-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.custom-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 30%; /* Toma el 30% del contenedor */
+    max-width: 30%; /* Máximo ancho del 30% */
+    text-align: left;
+}
+.custom-item-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+.custom-item-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Estilos para la sección de inversiones */
+.investment-section {
+    padding: 40px 20px;
+    background-color: #273037; /* Fondo gris claro */
+}
+.investment-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto 20px auto; /* Añadimos margen inferior para espacio entre contenedores */
+}
+.image-overlay {
+    position: relative;
+    flex: 1;
+    max-width: 50%;
+}
+.image-overlay img {
+    width: 100%;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparencia negra */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number {
+    font-size: 10rem;
+    color: white;
+    opacity: 0.7; /* Transparencia del número */
+}
+
+.investment-text {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.investment-text h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.investment-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.investment-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.investment-text ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: white; /* Línea divisoria blanca */
+    margin: 20px 0; /* Espaciado alrededor de la línea divisoria */
+}
+
+
+
+
+
+/* Media Queries para asegurar responsividad */
+@media (max-width: 768px) {
+    .servicio {
+        flex: 1 1 100%; /* Toma el 100% del contenedor en pantallas pequeñas */
+        max-width: 100%; /* Máximo ancho del 100% */
+    }
+    .custom-item {
+        flex: 1 1 100%; /* Toma el 100% del contenedor en pantallas pequeñas */
+        max-width: 100%; /* Máximo ancho del 100% */
+    }
+    .investment-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .image-overlay, .investment-text {
+        max-width: 100%;
+    }
+    .number {
+        font-size: 5rem; /* Ajustamos el tamaño del número */
+    }
+}

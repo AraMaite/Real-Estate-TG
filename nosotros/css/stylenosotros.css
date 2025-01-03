@@ -106,6 +106,7 @@ nav {
     text-align: justify;
 }
 /*NUESTRO COMPROMISO*/
+/* Estilos originales */
 .compromiso-section {
     background-color: #273037; 
     padding: 40px 20px;
@@ -127,19 +128,20 @@ nav {
 }
 .textocompromiso {
     flex: 1;
+    text-align: justify;
     color: white; 
     margin-left: 20px;
     max-width: 70%;
-    text-align: justify;
 }
 .textocompromiso h2 {
-    font-size: 2rem;
+    font-size: 2.3rem;
     margin-bottom: 1rem;
 }
 .textocompromiso p {
-    font-size: 1rem;
-    margin: 10px 0;
+    font-size: 1.5rem;
+    margin: 0 15px;
     line-height: 1.5;
+    text-align: justify;
 }
 /*NUESTRA MISION*/
 .mision-estrategia-section {
@@ -164,18 +166,20 @@ nav {
     margin-right: 20px; 
 }
 .textmision {
+    flex: 1;
+    text-align: justify;
     color: white; 
-    max-width: 50%;
     margin-left: 20px;
+    max-width: 70%;
 }
 .textmision h2 {
-    font-size: 2.5rem;
-    margin-top: 0;
+    font-size: 2.2rem;
+    line-height: 1.5;
     text-align: right;
 }
 .textmision p {
-    font-size: 1rem;
-    margin: 10px 0;
+    font-size: 1.3rem;
+    line-height: 1.3;
     text-align: justify;
 }
 /*EXCELENCIA Y ATENCION*/
@@ -194,9 +198,10 @@ nav {
     gap: 1rem;
 }
 .compromiso-container img {
-    width: 30%; 
+    max-width: 50%;
     height: auto;
-    border: 2px solid white; 
+    border: 2px solid white;
+    margin-right: 20px; 
 }
 .textocompromiso {
     flex: 1;
@@ -223,21 +228,24 @@ nav {
 }
 .servicios-container {
     max-width: 900px;
-    margin: 0 auto;
-    position: relative;
+    margin: 0 0 auto;
     z-index: 2; 
-    text-align: center;
+    text-align: left;
     color: #273037;
+    margin-left: 55px;
 }
 .servicios-container h2 {
-    font-size: 24px;
+    font-size: 30px;
     color: #273037;
     font-weight: bold;
     margin-bottom: 20px;
+    text-align: start;
 }
 .servicios-container p {
-    font-size: 16px;
-    line-height: 1.
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: start;
+    margin: 0 20px;
 }
 .servicios-section {
     padding: 50px 20px;
@@ -263,8 +271,8 @@ nav {
     text-align: start;
 }
 .servicios-container p {
-    font-size: 1rem; 
-    margin-top: 0.5rem;
+    font-size: 20px; 
+    line-height: 1.5; 
     font-weight: bold;
     text-align: start;
 }
@@ -274,22 +282,25 @@ nav {
 .servicio-item {
     margin-bottom: 20px;
     padding: 15px;
+    width: calc(100% + 170px);
     background-color: #273037;
     color: #ffffff;
     border-left: 6px solid #d4af37; 
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: start;
 }
 .servicio-item h3 { 
-    font-size: 18px;  
+    font-size: 18px;
+    line-height: 1.5; 
     font-weight: bold; 
     color: #ffffff; 
     display: inline;
     margin: 0;
 } 
 .servicio-item p { 
-    font-size: 14px; 
-    line-height: 1.5; 
+    font-size: 18px; 
+    line-height: 1.3; 
     color: #eee; 
     display: inline;
     margin: 0;
@@ -299,26 +310,25 @@ nav {
 .ceo-section {
     width: 100vw; 
     padding: 50px 20px;
-    background-color: #273037;  
+    background-color: #273037; 
 }
 .ceo-container {
     max-width: 1200px;
-    margin: 0;
-    text-align: center;
+    margin: 0 auto;
+    text-align: left;
     color: #273037; 
 }
 .ceo-container h2, 
 .ceo-container h3, 
 .ceo-container h4 {
-    text-align: left;
-    color: #ffffff; 
-    margin-left: 0;
+    color: #ffffff;
 }
 .ceo-container p { 
+    margin-top: 20px;
+    line-height: 1.7;
+    color: #ffffff;
     text-align: justify;
-    color: #ffffff; 
-    line-height: 1.6;
-    margin: 20px 0; 
+    margin-bottom: 0px;
 }
 .ceo-container h2 {
     font-size: 2.5rem; 
@@ -333,41 +343,60 @@ nav {
 .ceo-vanina {
     display: flex;
     align-items: flex-start;
-    max-width: 1200px;
+    max-width: 900px;
     width: 100%;
-    margin-top: 40px;
+    margin: 40px auto;
+    background-color: #272734;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
-.ceo-img { 
+
+.ceo-img {
     max-width: 200px;
-    height: auto;
-    position: relative; 
-    margin-right: 20px; 
-    padding: 10px; 
-    border-radius: 10px; 
+    position: relative;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 10px;
     background: rgba(40, 39, 39, 0.5);
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
+
+.ceo-img img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
 .nombre {
     margin-top: 10px;
     font-size: 1.5rem;
     color: #ffffff;
     text-align: center;
+    font-weight: bold;
 }
+
 .Vanina {
-    text-align: left;
-    color: white;
-    border: 1px solid white;
-    border-radius: 10px;
-    padding: 10px;
     flex: 1;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
 }
+
 .Vanina p {
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.8;
     text-align: justify;
-    margin: 0; 
+    margin: 0;
+}
+
+.Vanina p strong {
+    font-weight: bold;
 }
 /*MAPA*/
 .ubicacion {
@@ -441,11 +470,37 @@ nav {
 }
 .contact-button:hover {
     color: #f0c26c;
-}/* Ajustes para dispositivos móviles */
-@media (max-width: 768px) {
-
 }
-/* Diseño para pantallas grandes (≥1025px) */
-@media (min-width: 1025px) {
 
+/* Media Queries para Pantallas de Escritorio */
+@media (min-width: 1024px) {
+    .compromiso-section { padding: 60px 40px; }
+    .textocompromiso h2 { font-size: 2rem;}
+    .textocompromiso p { font-size: 1.4rem;}
+}
+
+/* Media Queries para Pantallas Notebooks */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .compromiso-section { padding: 40px 20px;}
+    .compromiso-img { width: 35%;}
+    .textocompromiso h2 { font-size: 1.7rem;}
+    .textocompromiso p { font-size: 1rem;}
+}
+
+/* Media Queries para Pantallas Móviles */
+@media (max-width: 767px) {
+    .compromiso-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;}
+    .compromiso-img {width: 80%;}
+    .textocompromiso {
+        margin-left: 0;
+        max-width: 100%;
+        padding: 0 20px;}
+    .textocompromiso h2 { font-size: 2rem; }
+    .textocompromiso p {
+        font-size: 1.4rem;
+        margin: 0;}
 }
