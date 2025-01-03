@@ -86,81 +86,126 @@ nav {
     text-align: center;
 }
 .servicios-section h2 {
-    font-size: 2.5rem;
-    color: #333; /* Color del texto */
-    margin-bottom: 20px;
+    font-size: 3rem;
+    color: #273037;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 50px;
 }
 .servicios-section p {
-    font-size: 1.2rem;
-    color: #666; /* Color del texto */
-    margin-bottom: 40px;
+    font-size: 2em;
+    color: #273037; 
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0 80px;
 }
 .servicios-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     gap: 20px;
 }
 .servicio {
-    background-color: white;
+    background-color: #273037;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1 1 45%; /* Toma el 45% del contenedor */
-    max-width: 45%; /* Máximo ancho del 45% */
+    flex: 1 1 calc(45% - 60px); /* Toma el 45% del contenedor */
+    max-width: calc(45% - 60px);
+    box-sizing: border-box;
     text-align: left;
+    min-height: 200px;
 }
 .servicio h3 {
-    font-size: 1.5rem;
-    color: #333;
+    font-size: 2rem;
+    color: white;
     margin-bottom: 10px;
+    text-align: center;
 }
 .servicio p {
-    font-size: 1rem;
-    color: #666;
+    font-size: 1.4rem;
+    color: white;
     line-height: 1.6;
+    text-align: justify;
 }
 
 /*RECUADRO AZUL Y BLANCO*/
 .custom-section {
-    background-color: #f4f4f4; /* Fondo gris claro */
-    padding: 40px 20px;
+    background-color: #1d2731;
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde blanco alrededor del recuadro */
+}
+
+.custom-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
     text-align: center;
 }
-.custom-title {
-    font-size: 2.5rem;
-    color: #333; /* Color del texto */
-    margin-bottom: 20px;
-}
+
 .custom-description {
-    font-size: 1.2rem;
-    color: #666; /* Color del texto */
-    margin-bottom: 40px;
-}
-.custom-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-}
-.custom-item {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1 1 30%; /* Toma el 30% del contenedor */
-    max-width: 30%; /* Máximo ancho del 30% */
-    text-align: left;
-}
-.custom-item-title {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-.custom-item-description {
     font-size: 1rem;
-    color: #666;
     line-height: 1.6;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.custom-container {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.custom-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.custom-item:last-child {
+    border-bottom: none;
+}
+
+.custom-item-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.custom-item-title::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+    background-size: cover;
+}
+
+.custom-item:nth-child(1) .custom-item-title::before {
+    background-image: url('https://example.com/icon-global.png'); /* Reemplaza con la URL de tu ícono */
+}
+
+.custom-item:nth-child(2) .custom-item-title::before {
+    background-image: url('https://example.com/icon-investment.png'); /* Reemplaza con la URL de tu ícono */
+}
+
+.custom-item:nth-child(3) .custom-item-title::before {
+    background-image: url('https://example.com/icon-legal.png'); /* Reemplaza con la URL de tu ícono */
+}
+
+.custom-item-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 /* Estilos para la sección de inversiones */
@@ -194,13 +239,11 @@ nav {
     align-items: center;
     justify-content: center;
 }
-
 .number {
     font-size: 10rem;
     color: white;
     opacity: 0.7; /* Transparencia del número */
 }
-
 .investment-text {
     flex: 1;
     max-width: 50%;
@@ -208,28 +251,23 @@ nav {
     text-align: left;
     color: #ffffff;
 }
-
 .investment-text h2 {
     font-size: 2.4rem;
     margin-bottom: 20px;
 }
-
 .investment-text p {
     font-size: 1.2rem;
     margin-bottom: 20px;
 }
-
 .investment-text ul {
     list-style: none;
     padding: 0;
 }
-
 .investment-text ul li {
     font-size: 1.2rem;
     margin-bottom: 10px;
     line-height: 1.6;
 }
-
 .divider {
     width: 100%;
     height: 1px;
