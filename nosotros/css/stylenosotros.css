@@ -342,59 +342,56 @@ nav {
 /*VANINA*/
 .ceo-vanina {
     display: flex;
-    align-items: flex-start;
-    max-width: 900px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
     width: 100%;
-    margin: 40px auto;
-    background-color: #272734;
+    margin: 60px auto;
     padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .ceo-img {
-    max-width: 200px;
+    max-width: 250px;
     position: relative;
-    margin-right: 20px;
-    padding: 10px;
+    margin-right: 0;
+    padding: 15px;
     border-radius: 10px;
     background: rgba(40, 39, 39, 0.5);
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
-
 .ceo-img img {
     width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
-
 .nombre {
-    margin-top: 10px;
-    font-size: 1.5rem;
+    margin-top: 15px;
+    font-size: 1.8rem;
     color: #ffffff;
     text-align: center;
     font-weight: bold;
 }
-
 .Vanina {
     flex: 1;
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 0 10px 10px 0;
+    border-left: none; 
+    padding: 30px;
     background: rgba(255, 255, 255, 0.1);
     position: relative;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
 .Vanina p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.8;
     text-align: justify;
     margin: 0;
 }
-
 .Vanina p strong {
     font-weight: bold;
 }
@@ -403,7 +400,7 @@ nav {
     text-align: center;
     max-width: 1200px;
     width: 100%;
-    margin-top: 40px;
+    margin: 40px auto;
 }
 .ubicacion h2 {
     text-align: start;
