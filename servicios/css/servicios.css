@@ -131,49 +131,48 @@ nav {
 }
 
 /*RECUADRO AZUL Y BLANCO*/
-.custom-section {
+.section-principal {
     background-color: #1d2731;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.custom-section {
     color: white;
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1.5px solid rgb(255, 255, 255);
     max-width: 800px;
     width: 90%;
-    margin: auto;
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde blanco alrededor del recuadro */
+    margin: 40px auto;
 }
-
 .custom-title {
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 1rem;
     text-align: center;
 }
-
 .custom-description {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 2rem;
     text-align: justify;
 }
-
 .custom-container {
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1.5px solid rgb(255, 255, 255);
     border-radius: 10px;
     overflow: hidden;
 }
-
 .custom-item {
     display: flex;
     align-items: center;
     padding: 1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-
 .custom-item:last-child {
     border-bottom: none;
 }
-
 .custom-item-title {
     font-size: 1.1rem;
     font-weight: bold;
@@ -181,7 +180,6 @@ nav {
     display: flex;
     align-items: center;
 }
-
 .custom-item-title::before {
     content: "";
     display: inline-block;
@@ -190,19 +188,15 @@ nav {
     margin-right: 0.5rem;
     background-size: cover;
 }
-
 .custom-item:nth-child(1) .custom-item-title::before {
-    background-image: url('https://example.com/icon-global.png'); /* Reemplaza con la URL de tu ícono */
+    background-image: url('/servicios/images/Recurso\ 4.png'); 
 }
-
 .custom-item:nth-child(2) .custom-item-title::before {
-    background-image: url('https://example.com/icon-investment.png'); /* Reemplaza con la URL de tu ícono */
+    background-image: url('/servicios/images/Recurso\ 5.png'); 
 }
-
 .custom-item:nth-child(3) .custom-item-title::before {
-    background-image: url('https://example.com/icon-legal.png'); /* Reemplaza con la URL de tu ícono */
+    background-image: url('/servicios/images/Recurso\ 6.png'); 
 }
-
 .custom-item-description {
     font-size: 0.9rem;
     line-height: 1.5;
