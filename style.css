@@ -4,13 +4,15 @@
     box-sizing: border-box;
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #004080; 
 }
 header {
-    background-color: #273037; 
     padding: 1rem 0;
 }
 /*NAV*/
@@ -61,7 +63,7 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    border-radius: 20px; 
+    border-radius: 40px; 
     padding: 2px; 
     background: linear-gradient(135deg, #d4af37, #f0c26c, #d4af37, #f0e68c, #d4af37); 
     background-size: 300%; 
@@ -78,596 +80,295 @@ nav {
     background-position: 100% 50%; 
 }
 /*DEBAJO DEL NAV*/
-/*IMAGEN DE FONDO*/
-.imagen-blanca-con-lineas {
-    position: relative;
-    width: 100%;
-    height: auto; 
+/* Fondo de la sección con imagen */
+.fondo-de-lineas {
+    background-image: url('/inicio/images/FONDO\ WEB\ -THORNE\ GLOBAL.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    padding: 80px 50px;
 }
-.imagen-blanca-con-lineas img {
-    width: 100%; 
-    height: auto; 
-    object-fit: cover;
-    position: relative;
+/* Contenedor principal */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-/*CONTENIDO*/
-.hero-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    padding-top: 100px;
-    display: flex; 
-    justify-content: flex-start;
-    align-items: center; 
-    color: white;
+.content-principal {
+    background-color: white;
+    border: 2px solid #FFD700;
+    border-radius: 15px;
+    padding: 60px 70px;
+    max-width: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-/*RECUADRO IZQUIERDO*/
-.background-azul {
-    background-color: #273037; 
-    padding: 1.5rem;
-    margin-bottom: 130px;
-    max-width: 50%; 
-    height: 380px;
-}
-.background-azul h2{
-    font-family: "Libre Baskerville", serif;
-    font-size: 2.4rem;
-    font-weight:200;
-    background: linear-gradient(135deg, #d4af37, #f0c26c, #d4af37, #f0e68c, #d4af37); 
-    -webkit-background-clip: text; 
-    background-clip: text; 
-    color: transparent; 
-}
-.background-azul p {
-    color: whitesmoke;
-    font-size: 1.27rem;
-    font-family: "Montserrat", sans-serif;
-    padding-top: 15px;
-}
-/*RECUADRO DERECHO*/
-.recuadro-blanco {
-    background-color: #fff;
-    padding: 2rem;
-    text-align: center;
-    max-width: 50%; 
-    width: 100%; 
-    flex: 1; 
-}
-.recuadro-blanco .logo-dorado {
-    width: 400px; 
-    margin-bottom: 1rem;
-}
-.recuadro-blanco p {
-    color: #555; 
-    font-size: 1rem;
-    line-height: 1.6;
-}
-/*RECUADROS AZULES*/
-.recuadros-inferiores {
-    position: absolute; 
-    bottom: 10%; 
-    left: 50%;
-    transform: translateX(-50%); 
-    display: flex; 
-    justify-content: center;
-    gap: 200px;
-    z-index: 2; 
-}
-.recuadro-azul {
-    background-color: #161920;
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.5rem; 
-    font-weight:20px;
-    text-align: center;
-    padding: 1.3rem;
-    flex: 1;
-    max-width: 300px;
-}
-.recuadro-azul p{
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-}
-/* "CRECER EN DUBAI" */
-.recuadro-inferior {
-    position: absolute; 
-    bottom: -8.5rem; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    width: 100%; 
-    height: 300px; 
-    background-color: #273037; 
-    z-index: 1; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    color: whitesmoke; 
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.2rem; 
-    text-align: center; 
-}
-.recuadro-inferior h2 {
-    margin-top: 5rem;
-    margin-bottom: 2rem; 
-    font-size: 3rem; 
-    font-weight: bold;
-}
-.recuadro-inferior p {
-    font-size: 1.2rem; 
-    line-height: 1.5; 
-    max-width: 80%; 
-}
-/*DOBLE IMAGEN DE DUBAI*/
-.city-image {
-    position: relative;
-    width: 100%;
+.content-principal p {
+    font-family: "Quicksand", serif;
+    font-size: 1.8rem;
+    color: #1d2731;
+    text-align: justify;
+    line-height: 1;
     margin: 0;
 }
-.city-image .background {
+.content-logo {
+    max-width: 20%;
+}
+.logo-dorado {
     width: 100%;
     height: auto;
 }
-.city-image .circle-image {
-    position: absolute;
-    top: 50%;
-    left: 38%; 
-    transform: translate(-50%, -50%);
-    width: 370px;
-    height: 370px;
-    border-radius: 50%;
-    overflow: hidden;
-    z-index: 3;
+/* Fondo blanco para toda la sección */
+.recuadros-inferiores {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    margin-bottom: 20px;
+    background-color: #FFFFFF; 
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.recuadro1, .recuadro2, .recuadro3 {
+    background-color: #FFFFFF; 
+    color: #1d2731;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #dcc022; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px; 
+}
+.recuadro1 p, .recuadro2 p, .recuadro3 p {
+    font-size: 35px; 
+    font-weight: lighter; 
+    margin: 0;
+}
+.texto {
+    text-align: center;
+    padding: 20px;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+.texto h2 {
+    font-family: "Quicksand", serif;
+    font-size: 3rem;
+    font-weight: bold; 
+    color: #1d2731; 
+    margin-bottom: 10px;
+}
+.texto p {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 1.2rem; /* Tamaño de la fuente para el párrafo */
+    color: #1d2731; /* Texto azul */
+}
+/*Cuadrado blanco con foto de dubai y botones*/
+.city-image {
+    position: relative;
+    background: url('/inicio/images/FONDO\ WEB\ -THORNE\ GLOBAL.jpg') no-repeat center center/cover;
+    padding: 100px 0; 
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 0;
 }
-.city-image .circle-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+.img-ciudad {
+    border: 2px solid #FFD700;
+    border-radius: 25px;
+    width: 500px;  
+    height: 500px;
+    margin-left: 200px;
+    z-index: 1;
 }
+.content {
+    position: relative;
+    z-index: 2;
+    margin-top: 0;
+    margin-left: -1px; 
+}
+/* Estilos para el recuadro con botones */
 .info-box {
-    position: absolute;
-    top: 50%;
-    left: 40%; 
-    transform: translate(0%, -50%);
-    background-color: rgba(0, 0, 0, 0.7); 
-    padding: 40px 20px;
+    background-color: #FFFFFF; 
+    border: 2px solid  #FFD700; 
+    border-left: none;
     border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+    padding: 40px;
+    padding-left: 0;
+    margin-left: -1px;
     z-index: 2;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-    color: white;
     max-width: 70%; 
     min-height: 350px;
 }
 .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; 
     justify-content: center;
 }
 .button {
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 290px; 
-    text-align: center;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: background-color 0.3s ease; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    gap: 10px;
+    color: #004080;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px; 
+    width: calc(100% - 50px);        
+    transition: border-color 0.3s ease;
 }
-.button:hover {
-    background-color: #ffffffa4;
-    color: #000000; 
+.button:hover { 
+    border-color: #eed232; 
 }
 .button img {
-    width: 40px; 
+    width: 60px; 
     height: auto;
-    margin-bottom: 10px;
 }
 .button p {
-    font-size: 0.9em;
     margin: 0;
-    color:#ffffff;
+    font-family: "Quicksand", serif;
+    font-size: 1rem;
 }
 
-/* Sección Promocional */
+/*HOTEL EN ISLA*/
 .promo-section {
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 40px 20px;
-    background: url("/inicio/images/edificioUno.png") no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    margin: 20px 0;
-    position: relative;
+    justify-content: center;
+    padding: 50px;
+    background-color: #f5f5f5; 
 }
-.promo-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    z-index: 1;
-}
-.promo-image {
+.promo-image { 
+    order: 2; 
     flex: 1; 
-    max-width: 50%;
-    margin-right: 20px;
-    z-index: 2;
-    position: relative;
+    display: flex; 
+    justify-content: center;
+    flex-direction: row;
 }
 .promo-image img {
-    width: 100%;
-    height: auto;
+    border-radius: 25px; 
+    border: 2px solid #FFD700;
+    width: 500px;
+    height: 450px;
+    max-width: 100%;
 }
 .promo-text {
+    order: 1;
     flex: 1;
-    text-align: left;
-    z-index: 2;
-    position: relative;
-    color: white;
+    max-width: 600px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #1d2731;
+    text-align: justify;
+    margin-left: 40px;
+    margin-right: 20px;
 }
 .promo-text p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: white;
-}
-
-/* Sección de NEWS */
-.news-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    position: relative;
-    padding: 60px 20px; 
-    background: url('/inicio/images/dubai-tower-arab-khalifa-burj-emirates-city-architecture-skyscraper-transformed.jpeg') no-repeat center top;
-    background-size: 100%; 
-}
-.news-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 1; 
-    pointer-events: none; 
-}
-.news-section .content {
-    position: relative;
-    z-index: 2; 
-}
-.logonews-container{
-    float: left;
-    margin-right: 1200px;
-    z-index: 3;
-}
-.logonews {
-    width: 200px; 
-    height: auto; 
-}
-.news-section h1 {
-    font-size: 3em; 
-    font-weight: bold;
-    text-align: left;
-    color: #ffffff;
-    z-index: 1; 
-    position: relative;
-}
-.news-section p {
-    font-size: 1.7em; 
-    text-align: justify;
-    color: #ffffff;  
-    z-index: 2; 
-    position: relative;
-}
-.news-articles-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 45px;
-}
-.text-tarjeta { 
-    width: 18rem;
-    height: 18rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: end;
-    position: relative;
-    z-index: 2;
-}  
-.text-tarjeta::before,.text-tarjeta::after {
-    content: "";
-    position: absolute;
-    background-color: #d4af37;
-}
-.text-tarjeta::before{
-    bottom: -10px;
-    left: -10px;
-    width: 10px;
-    height: 90%;
-}
-.text-tarjeta::after{
-    bottom: -10px;
-    left: 0;
-    width: 90%;
-    height: 10px;
-    background: linear-gradient(to left, white,#f0c26c,#d4af37)
-}
-.text-tarjeta p { 
-    color: black;
-    line-height: 1;
-    font-size: large;
-} 
-.text-tarjeta a {
-    width: 18rem;
-    height: 18rem;
-    position: absolute;
-    z-index: 1;
-}
-.news-image1{ 
-    background-image: linear-gradient(to top, white, rgba(255,255,255,0)), url(/inicio/images/foto\ vanina\ noticia\ 2.jpeg);
-}  
-.news-image2 { 
-    background-image: linear-gradient(to top, white, rgba(255,255,255,0)), url(/inicio/images/dubai\ foto\ noticia.jpg);
-}  
-.news-image3{
-    background-image: linear-gradient(to top, white, rgba(255,255,255,0)), url(/inicio/images/vanina\ -noticia.jpg);
+    margin: 0;
 }
 
 
-/*FAQ´S*/
-.faq {
-    color: #ffffff; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    position: relative;
-    padding: 60px 20px; 
-    z-index: 1;
-}
-.faq h2 {
-    font-size: 2.4em; 
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #ffffff;
-    z-index: 1; 
-    width: 100%;
-    text-align: left;
-}
-.faq p {
-    font-size: 1.7em; 
-    text-align: justify;
-    color: #ffffff;  
-    z-index: 2; 
+
+
+/* Media Query para tabletas */
+@media (min-width: 768px) {
+    .container-header {
+        padding: 0 20px;
+    }
+    .logo {
+        height: 50px;
+    }
+    .menu {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .menu li {
+        font-size: 1.1rem;
+    }
+    .fondo-de-lineas {
+        padding: 60px 40px;
+    }
+    .content-principal {
+        padding: 40px 30px;
+        max-width: 70%;
+    }
+    .recuadros-inferiores {
+        gap: 15px;
+    }
+    .recuadro1, .recuadro2, .recuadro3 {
+        width: 45%;
+    }
+    .texto h2 {
+        font-size: 2.5rem;
+    }
+    .img-ciudad {
+        width: 400px;
+    }
+    .info-box {
+        padding: 30px;
+        max-width: 75%;
+    }
+    .buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .button img {
+        width: 50px;
+    }
 }
 
-/*Preguntas desplegables*/
-.faq-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-.faq-item {
-    background-color: rgba(0,0,0,0.5);
-    border: 1px solid rgba(255, 255, 255, 0.7); 
-    border-radius: 10px; 
-    padding: 20px;
-    text-align: left; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: max-heigth 0.3s, border-color 0.3 ease, transform 0.3s ease;
-    overflow: hidden;
-    max-height: 200px;
-}
-.faq-item.open { 
-    max-height: 500px;
-}
-.faq-item:hover {
-    border-color: #f0c26c;
-    transform: scale(1.05); 
-}
-.faq-item h3 {
-    color: #ffffff;
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-}
-.faq-item p {
-    font-size: 1.2rem; 
-    line-height: 1.3; /* Espaciado entre líneas para mejor legibilidad */
-    color: #ffffff; /* Asegúrate de que el texto sea legible */
-    margin: 0 auto; /* Centra el párrafo horizontalmente */
-    text-align: start;
-    max-width: 90%; /* Limita el ancho del texto */
-}
-.faq-answer {
-    margin-top: 10px;
-    display: none;
-}
-.faq-item.open .faq-answer {
-    display: block; 
-}
-.faq-item.open button {
-    margin-top: 10px; 
-}
-.faq-item button {
-    align-self: flex-start; 
-    background-color: #868282a3; 
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    transition: background-color 0.3s;
-}
-.faq-item button:hover {
-    background-color: #f0c26c; 
-}
-    /* FOOTER */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-}
-.footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-.footer-logo { 
-    display: inline-block; 
-    margin: 0 50px;
-} 
-.footer-logo img { 
-    width: 160px; 
-    height: auto; 
-    display: block; 
-    margin: 0 10px; 
-}
-.footer-column {
-    flex: 1;
-    padding: 10px;
-}
-.footer-column h3 {
-    margin-bottom: 10px;
-}
-.footer-column ul {
-    list-style: none;
-    padding: 0;
-}
-.footer-column ul li {
-    margin-bottom: 10px;
-}
-.footer-column ul li a {
-    color: #ccc;
-    text-decoration: none;
-}
-.footer-column ul li a:hover {
-    color: white;
-}
-.footer-bottom {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #222;
-    color: #ccc;
-    border-top: 1px solid #444;
-}
-.footer-bottom .footer-logo {
-    display: flex;
-    align-items: center;
-    margin-bottom: auto;
-}
-.footer-bottom .footer-logo img {
-    max-width: 100px;
-    height: auto;
-    margin-right: 10px;
-}
-.footer-bottom .footer-logo p {
-    margin: 5px 0;
-    font-size: 1.2em;
-}
-.footer-bottom .footer-logo span {
-    font-size: 0.9em;
-    color: #999;
-}
-.footer-bottom p { 
-    margin-left: auto;
-}
-/* Estilos responsivos */
-/* Media Queries para Pantallas Escritorio */ 
-@media (min-width: 1024px) { 
-    .container-header { padding: 0 30px; } 
-    .menu { gap: 3.5rem; padding-right: 250px; }
-    .background-azul { max-width: 45%; height: 420px; } 
-    .recuadro-blanco { max-width: 45%; } 
-    .recuadros-inferiores { gap: 250px; } 
-    .recuadro-azul { max-width: 350px; } 
-    .recuadro-inferior { height: 350px; } 
-    .logonews-container {padding: 0 30px;}
-    .logonews {width: 250px;}
-    .faq { padding: 80px 40px;}
-    .faq h2 { font-size: 3em;}
-    .faq p { font-size: 2em;}
-    .faq-item h3 { font-size: 1.5rem; }
-    .faq-item p { font-size: 1.5rem; }
-    .footer-container { padding: 0 40px;}
-    .footer-logo img { width: 200px; }
-    .footer-bottom .footer-logo img { max-width: 120px;}
-    } 
-
-/* Media Queries para Pantallas Notebooks */ 
-@media (max-width: 1024px) and (min-width: 768px) { 
-    .container-header { padding: 0 25px; } 
-    .logo { height: 45px; }
-    menu { gap: 2rem; padding-right: 200px; } 
-    .background-azul { max-width: 100%; height: auto; } 
-    .recuadro-blanco { max-width: 100%; } 
-    .recuadros-inferiores { gap: 150px; } 
-    .recuadro-azul { max-width: 100%; } 
-    .recuadro-inferior { height: auto; } 
-    .logonews-container {padding: 0 25px;}
-    .logonews {width: 220px;}
-    .faq { padding: 70px 30px;}
-    .faq h2 { font-size: 2.6em;}
-    .faq p { font-size: 1.8em;}
-    .faq-item h3 { font-size: 1.3rem;}
-    .faq-item p { font-size: 1.3rem; }
-    .footer-container { padding: 0 30px;}
-    .footer-logo img { width: 180px;}
-    .footer-bottom .footer-logo img { max-width: 110px;}
-}
-
-/* Media Queries para Pantallas Móviles */ 
-@media (max-width: 767px) { 
-    .container-header { flex-direction: column; align-items: flex-start; padding: 0 15px; } 
-    .logo { padding-left: 0; height: 40px; } 
-    .nav { justify-content: flex-start; padding: 1rem; } 
-    .menu { flex-direction: column; gap: 1rem; padding-right: 0; } 
-    .background-azul, .recuadro-blanco { max-width: 100%; margin-bottom: 15px; } 
-    .hero-content { flex-direction: column; padding-top: 50px; } 
-    .recuadros-inferiores { flex-direction: column; bottom: -2rem; gap: 15px; } 
-    .recuadro-azul { max-width: 100%; } 
-    .recuadro-inferior { height: 400px; bottom: -5rem; } 
-    .recuadro-inferior h2 { margin-top: 3rem; font-size: 2rem; } 
-    .recuadro-inferior p { max-width: 90%; }
-    .logonews-container {padding: 0 15px; }
-    .logonews {width: 180px;}   
-    .faq { padding: 50px 20px;}
-    .faq h2 {font-size: 2em;}
-    .faq p { font-size: 1.5em;}
-    .faq-item { padding: 15px; max-height: none;}
-    .faq-item h3 { font-size: 1.2rem;}
-    .faq-item p { font-size: 1.2rem;}
-    .footer-container { padding: 0 20px; flex-direction: column; text-align: center;}
-    .footer-logo img { width: 140px;}
-    .footer-bottom { flex-direction: column; align-items: center;}
-    .footer-bottom p { margin: 10px 0 0 0; }
+/* Media Query para escritorio */
+@media (min-width: 1200px) {
+    .container-header {
+        padding: 0 50px;
+    }
+    .logo {
+        height: 70px;
+    }
+    .menu {
+        gap: 2rem;
+    }
+    .menu li {
+        font-size: 1.3rem;
+    }
+    .fondo-de-lineas {
+        padding: 80px 50px;
+    }
+    .content-principal {
+        padding: 60px 70px;
+        max-width: 55%;
+    }
+    .recuadros-inferiores {
+        gap: 20px;
+    }
+    .recuadro1, .recuadro2, .recuadro3 {
+        font-size: 1.5rem;
+        width: 30%;
+    }
+    .texto h2 {
+        font-size: 3rem;
+    }
+    .img-ciudad {
+        width: 500px;
+    }
+    .info-box {
+        padding: 40px;
+        max-width: 70%;
+    }
+    .buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .button img {
+        width: 60px;
+    }
 }
