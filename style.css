@@ -462,7 +462,7 @@ nav {
 }
 /*Footer*/
 footer {
-    font-family: "Futura", light, book;
+    font-family: "Quicksand", serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
@@ -473,7 +473,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1600px;
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 20px;
     color: #004080;
 }
@@ -482,10 +482,11 @@ footer {
     margin: 0 50px;
 } 
 .footer-logo img { 
-    width: 160px; 
+    width: 250px; 
     height: auto; 
-    display: block; 
-    margin: 0 10px; 
+    display: block;
+    margin-top: 20px; 
+    margin: 0 20px; 
 }
 .footer-column {
     flex: 1;
@@ -586,6 +587,23 @@ footer {
     .button img {
         width: 50px;
     }
+    .content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .content-principal {
+        padding: 50px 40px;
+        max-width: 60%;
+    }
+    .content-principal p {
+        font-size: 1.5rem;
+    }
+    .content-logo {
+        max-width: 30%;
+    }
+    .logo-dorado {
+        width: 85%;
+    }
 }
 
 /* Media Query para escritorio */
@@ -631,5 +649,21 @@ footer {
     }
     .button img {
         width: 60px;
+    }
+    .fondo-de-lineas {
+        padding: 80px 50px;
+    }
+    .content-principal {
+        padding: 60px 70px;
+        max-width: 55%;
+    }
+    .content-principal p {
+        font-size: 1.8rem;
+    }
+    .content-logo {
+        max-width: 25%;
+    }
+    .logo-dorado {
+        width: 80%;
     }
 }
