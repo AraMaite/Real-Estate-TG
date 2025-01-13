@@ -604,6 +604,32 @@ footer {
     .logo-dorado {
         width: 85%;
     }
+    .news-section h1 {
+        font-size: 2.5rem;
+    }
+    .news-section p {
+        font-size: 1.2em;
+    }
+    .news-articles-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .text-tarjeta {
+        width: 90%;
+        height: auto;
+    }
+    .text-tarjeta p {
+        font-size: 0.9em;
+    }
+    .faq h2 {
+        font-size: 2.5rem;
+    }
+    .faq-text {
+        font-size: 1.3em;
+    }
+    .faq-item p, .faq-item h3 {
+        font-size: 1rem;
+    }
 }
 
 /* Media Query para escritorio */
@@ -665,5 +691,30 @@ footer {
     }
     .logo-dorado {
         width: 80%;
+    }
+    .news-section {
+        padding: 80px 40px;
+    }
+    .news-section h1 {
+        font-size: 4.5rem;
+    }
+    .news-section p {
+        font-size: 2em;
+    }
+    .news-articles-container {
+        gap: 40px;
+    }
+    .text-tarjeta {
+        width: 20rem;
+        height: 20rem;
+    }
+    .faq h2 {
+        font-size: 4.5rem;
+    }
+    .faq-text {
+        font-size: 1.8em;
+    }
+    .footer-container {
+        padding: 40px;
     }
 }
