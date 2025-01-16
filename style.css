@@ -4,13 +4,13 @@
     box-sizing: border-box;
 }
 body {
-    font-family: "Quicksand", serif;
+    font-family: "Afacad Flux", serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
     margin: 0;
     padding: 0;
-    background-color: rgb(47, 75, 102);
+    background-color: #273037;
 }
 header {
     padding: 1rem 0;
@@ -46,9 +46,9 @@ nav {
 .menu a li {
     text-decoration: none; 
     color: #ffffff; 
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.2rem; 
-    font-weight:500; 
+    font-family: "Afacad Flux", serif;
+    font-size: 1.5rem; 
+    font-weight: 400; 
     padding: 0.5rem 1rem; 
     display: inline-block;
     transition: color 0.3s ease;
@@ -99,12 +99,11 @@ nav {
     border-radius: 15px;
     padding: 60px 70px;
     max-width: 60%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .content-principal p {
-    font-family: "Quicksand", serif;
+    font-family: "Afacad Flux", serif;
     font-size: 1.8rem;
-    color: #1d2731;
+    color: #273037;
     text-align: justify;
     line-height: 1;
     margin: 0;
@@ -128,14 +127,13 @@ nav {
 }
 .recuadro1, .recuadro2, .recuadro3 {
     background-color: #FFFFFF; 
-    color: #1d2731;
-    font-family: "Montserrat", sans-serif;
+    color: #273037;
+    font-family: "Afacad Flux", serif;
     font-size: 1.5rem;
     text-align: center;
     padding: 20px;
     border: 2px solid #dcc022; 
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 250px; 
 }
 .recuadro1 p, .recuadro2 p, .recuadro3 p {
@@ -150,19 +148,19 @@ nav {
     width: 100%;
 }
 .texto h2 {
-    font-family: "Quicksand", serif;
+    font-family: "Afacad Flux", serif;
     font-size: 3rem;
-    font-weight: bold; 
-    color: #1d2731; 
+    font-weight: 400; 
+    color: #273037; 
     margin-bottom: 10px;
 }
 .texto p {
-    font-family: "Quicksand", serif;
+    font-family: "Afacad Flux", serif;
     font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: 200;
     font-style: normal;
-    font-size: 1.2rem; /* Tamaño de la fuente para el párrafo */
-    color: #1d2731; /* Texto azul */
+    font-size: 1.5rem;
+    color: #273037; 
 }
 /*Cuadrado blanco con foto de dubai y botones*/
 .city-image {
@@ -220,7 +218,7 @@ nav {
     align-items: center; 
     text-align: center; 
     gap: 10px;
-    color: #004080;
+    color: #273037;
     border: 2px solid transparent;
     border-radius: 5px;
     padding: 10px; 
@@ -236,8 +234,8 @@ nav {
 }
 .button p {
     margin: 0;
-    font-family: "Quicksand", serif;
-    font-size: 1rem;
+    font-family: "Afacad Flux", serif;
+    font-size: 1.1em;
 }
 
 /*HOTEL EN ISLA*/
@@ -266,10 +264,10 @@ nav {
     order: 1;
     flex: 1;
     max-width: 600px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
+    font-family: "Afacad Flux", serif;
+    font-size: 1.2rem;
     line-height: 1.6;
-    color: #1d2731;
+    color: #273037;
     text-align: justify;
     margin-left: 40px;
     margin-right: 20px;
@@ -291,9 +289,10 @@ nav {
 }
 .news-section h1 {
     display: flex-start;
+    font-family: "Afacad Flux", serif;
     font-size: 4rem;
-    font-weight: bold;
-    color: #1d2731;
+    font-weight: 400;
+    color: #273037;
     z-index: 1; 
     position: relative;
     width: 100%;
@@ -301,9 +300,10 @@ nav {
     margin-left: 0;
 }
 .news-section p {
+    font-family: "Afacad Flux", serif;
     font-size: 1.7em; 
     text-align: justify;
-    color: #1d2731;  
+    color: #273037;  
     z-index: 2; 
     position: relative;
 }
@@ -349,13 +349,15 @@ nav {
     border-bottom-right-radius: 15px;
 }
 .text-tarjeta p { 
+    font-family: "Afacad Flux", serif;
     color: black;
     line-height: 1;
     font-size: large;
 } 
 .text-tarjeta a {
-    width: 18rem;
-    height: 18rem;
+    font-family: "Afacad Flux", serif;
+    width: 10rem;
+    height: 10rem;
     position: absolute;
     z-index: 1;
 }
@@ -370,17 +372,18 @@ nav {
 }
 /* Seccion de prefuntas frecuentes*/
 .faq {
-    font-family: "Quicksand", serif;
+    font-family: "Afacad Flux", serif;
     font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: 400;
     font-style: normal;
-    color: #004080;
+    color: #273037;
 }
 .faq h2 {
     display: flex-start;
+    font-family: "Afacad Flux", serif;
     font-size: 4rem;
-    font-weight: bold;
-    color: #004080;
+    font-weight: 400;
+    color: #273037;
     z-index: 1; 
     position: relative;
     width: 100%;
@@ -388,9 +391,10 @@ nav {
     margin-left: 0;
 }
 .faq-text{
+    font-family: "Afacad Flux", serif;
     font-size: 1.7em; 
     text-align: justify;
-    color: #004080;
+    color: #273037;
     z-index: 2; 
     position: relative;
 }
@@ -404,7 +408,7 @@ nav {
     padding: 20px;
 }
 .faq-item {
-    border: 2px solid #2F4B66;
+    border: 2px solid #273037;
     border-radius: 10px; 
     padding: 20px;
     text-align: left; 
@@ -414,30 +418,32 @@ nav {
     max-height: 200px;
 }
 .faq-item.open { 
-    max-height: 500px;
+    max-height: 900px;
 }
 .faq-item:hover {
     border-color: #f0c26c;
     transform: scale(1.05); 
 }
-.faq-item p {
-    font-size: 1.2rem; 
-    line-height: 1.3; 
-    color: #004080; 
+.faq-item h3{
+    font-family: "Afacad Flux", serif;
+    font-size: 1.2rem;  
+    color: #273037; 
     margin: 0 auto; 
     text-align: start;
-    max-width: 90%;
+    max-width: 100%;
 }
-.faq-item h3{
-    font-size: 1.2rem; 
-    line-height: 1.3; 
-    color: #2F4B66; 
+.faq-item p {
+    font-family: "Afacad Flux", serif;
+    font-size: 1rem; 
+    color: #273037; 
     margin: 0 auto; 
     text-align: start;
     max-width: 90%;
 }
 .faq-answer {
-    margin-top: 10px;
+    font-size: 1rem;
+
+    margin-top: 0;
     display: none;
 }
 .faq-item.open .faq-answer {
@@ -448,7 +454,7 @@ nav {
 }
 .faq-item button {
     align-self: flex-start; 
-    background-color: #2F4B66; 
+    background-color: #273037; 
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -462,7 +468,7 @@ nav {
 }
 /*Footer*/
 footer {
-    font-family: "Quicksand", serif;
+    font-family: "Afacad Flux", serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
@@ -475,7 +481,7 @@ footer {
     max-width: 1600px;
     margin-top: 30px;
     padding: 20px;
-    color: #2F4B66;
+    color: #273037;
 }
 .footer-logo { 
     display: inline-block; 
@@ -493,7 +499,8 @@ footer {
     padding: 10px;
 }
 .footer-column h3 {
-    color: #2F4B66;
+    font-family: "Afacad Flux", serif;
+    color: #273037;
     margin-bottom: 10px;
 }
 .footer-column ul {
@@ -504,7 +511,7 @@ footer {
     margin-bottom: 10px;
 }
 .footer-column ul li a {
-    color: #2F4B66;
+    color: #273037;
     text-decoration: none;
 }
 .footer-column ul li a:hover {
