@@ -4,10 +4,12 @@
     box-sizing: border-box;
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Afacad Flux", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 header {
     background-color: #273037; 
@@ -77,23 +79,24 @@ nav {
     opacity: 1; 
     background-position: 100% 50%; 
 }
-
-
 /*CUATRO RECUADROS*/
 .servicios-section {
-    background-image: url(/servicios/images/fondolineas.png);
+    background-image: url(/inicio/images/FONDO\ WEB\ -THORNE\ GLOBAL.jpg);
     padding: 40px 20px;
     text-align: center;
 }
 .servicios-section h2 {
+    font-family: "Afacad Flux", serif;
     font-size: 3rem;
     color: #273037;
     margin-bottom: 10px;
-    font-weight: bold;
+    font-weight: 300;
     text-align: center;
     padding: 0 50px;
 }
 .servicios-section p {
+    font-family: "Afacad Flux", serif;
+    font-weight: 200;
     font-size: 2em;
     color: #273037; 
     margin-bottom: 20px;
@@ -107,78 +110,84 @@ nav {
     gap: 20px;
 }
 .servicio {
-    background-color: #273037;
+    background-color: transparent;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1 1 calc(45% - 60px); /* Toma el 45% del contenedor */
+    flex: 1 1 calc(45% - 60px); 
     max-width: calc(45% - 60px);
+    border: 3px solid transparent; 
+    background-image: linear-gradient(white, white), 
+                    linear-gradient(45deg, #d4af37, #f0c674, #d4af37);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
     box-sizing: border-box;
     text-align: left;
-    min-height: 200px;
+    min-height: 180px;
 }
 .servicio h3 {
+    font-family: "Afacad Flux", serif;
+    font-weight: 300;
     font-size: 2rem;
-    color: white;
+    color: #273037;
     margin-bottom: 10px;
     text-align: center;
 }
 .servicio p {
+    font-family: "Afacad Flux", serif;
+    font-weight: 200;
     font-size: 1.4rem;
-    color: white;
+    color: #273037;
     line-height: 1.3;
     text-align: center;
 }
 
 /*RECUADRO AZUL Y BLANCO*/
 .section-principal {
-    background-color: #1d2731;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 .custom-section {
-    color: white;
+    color: #1d2731;
     padding: 4rem 2rem;
-    border-radius: 15px;
-    border: 1.5px solid rgb(255, 255, 255);
     max-width: 1000px;
     width: 100%;
     margin: 40px auto;
     position: relative;
 }
 .custom-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    text-align: center;
+    font-family: "Afacad Flux", serif;
+    font-weight: 300;
+    font-size: 2.4rem;
+    text-align: left;
 }
 .custom-description {
-    font-size: 1.2rem;
-    line-height: 1.8;
+    font-family: "Afacad Flux", serif;
+    font-weight: 200;
+    font-size: 1.4rem;
     margin-bottom: 3rem;
     text-align: justify;
 }
-.custom-container {
-    border: 1.5px solid rgb(255, 255, 255);
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 1rem;
-    margin: 0 -2rem -4rem -2rem;
-}
 .custom-item {
+    border: 3px solid transparent;
+    border-radius: 35px; 
+    background-image: linear-gradient(white, white), 
+                    linear-gradient(45deg, #d4af37, #f0c674, #d4af37);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
-    padding: 1.5rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-.custom-item:last-child {
-    border-bottom: none;
+    padding: 1rem;
+    margin-top: 10px;
 }
 .custom-item-title {
+    font-family: "Afacad Flux", serif;
+    font-weight: 200;
     font-size: 1.4rem;
-    font-weight: bold;
     margin-right: 1.5rem;
     display: flex;
     align-items: center;
@@ -199,10 +208,13 @@ nav {
     top: 50%; right: 0; 
     width: 1.5px;  
     height: calc(100% - 5px); 
-    background-color: white; 
+    background-color: #1d2731; 
     transform: translateY(-50%); 
 }
-.custom-item-description { 
+.custom-item-description {
+    font-family: "Afacad Flux", serif;
+    font-weight: 300;
+    font-size: 1rem;
     font-size: 0.9rem; 
     line-height: 1.5; 
     margin-left: -13px; 
@@ -223,104 +235,142 @@ nav {
 
 /* Estilos para la sección de inversiones */
 .investment-section {
-    padding: 40px 20px;
-    background-color: #1d2731; 
+    background-image: url(/inicio/images/FONDO\ WEB\ -THORNE\ GLOBAL.jpg);
+    font-family: "Afacad Flux", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    padding: 20px;
 }
 .investment-container {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto 20px auto; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; 
+    padding: 20px;
 }
+
 .image-overlay {
     position: relative;
-    flex: 1;
-    max-width: 50%;
+    display: inline-block;
 }
+
 .image-overlay img {
-    width: 100%;
+    display: block;
+    border-radius: 15px; 
+    width: 550px; 
     height: auto;
 }
-.overlay {
+
+.image-overlay::before, .image-overlay::after {
+    content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: left;
+    border-radius: 15px;
 }
-.number {
-    font-size: 10rem;
-    color: rgb(129, 124, 124);
-    opacity: 0.7; 
+
+.image-overlay::before {
+    content: "";
+    position: absolute;
+    bottom: -10px; 
+    left: -10px; 
+    width: calc(100% + 10px); 
+    height: calc(100% + 10px); 
+    border: 5px solid transparent; 
+    border-left-color: #d4af37;
+    border-bottom-color: #d4af37; 
+    background: none;
 }
-.number-box { 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 80px; 
-    height: 65.5%; 
-    background-color: rgba(255, 255, 255, 0.589);  
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-}
+
 .investment-text {
     flex: 1;
-    max-width: 50%;
-    padding: 20px;
+    padding-left: 20px;
     text-align: left;
-    color: #ffffff;
+    color: #1d2731;
 }
 .investment-text h2 {
-    font-size: 2.4rem;
+    font-family: "Afacad Flux", serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0 0 20px;
     margin-bottom: 20px;
 }
 .investment-text p {
+    font-family: "Afacad Flux", serif;
     font-size: 1.2rem;
+    margin: 0 0 20px;
     margin-bottom: 20px;
 }
+
 .investment-text ul {
-    list-style: circle;
+    list-style: inside;
+    margin: 0 0 20px;
     padding: 0;
 }
+
 .investment-text ul li {
     font-size: 1.2rem;
-    margin-bottom: 10px;
+    margin: 0 0 20px;
     line-height: 1.6;
 }
-.divider {
-    width: 100%;
-    height: 1px;
-    background-color: white; 
-    margin: 20px 0; 
-}
 
-
-
-
-
-/* Media Queries para asegurar responsividad */
+/* Media queries para dispositivos medianos (tabletas) */
 @media (max-width: 768px) {
-    .servicio {
-        flex: 1 1 100%; /* Toma el 100% del contenedor en pantallas pequeñas */
-        max-width: 100%; /* Máximo ancho del 100% */
-    }
-    .custom-item {
-        flex: 1 1 100%; /* Toma el 100% del contenedor en pantallas pequeñas */
-        max-width: 100%; /* Máximo ancho del 100% */
-    }
     .investment-container {
         flex-direction: column;
         align-items: center;
+    }
+    
+    .image-overlay {
+        width: 100%;
         text-align: center;
     }
-    .image-overlay, .investment-text {
+    
+    .image-overlay img {
+        width: 100%;
+        height: auto;
+    }
+
+    .investment-text {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+/* Media queries para dispositivos pequeños (móviles) */
+@media (max-width: 480px) {
+    .servicios-section h2 {
+        font-size: 2rem;
+        padding: 0 20px;
+    }
+    
+    .servicios-section p {
+        font-size: 1.5rem;
+        padding: 0 20px;
+    }
+
+    .servicio {
+        flex: 1 1 100%;
         max-width: 100%;
     }
-    .number {
-        font-size: 5rem; /* Ajustamos el tamaño del número */
+    
+    .investment-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .investment-text p, .investment-text ul li {
+        font-size: 1rem;
+    }
+    
+    .custom-title {
+        font-size: 1.8rem;
+    }
+    
+    .custom-description, .custom-item-title, .custom-item-description {
+        font-size: 1rem;
+    }
+
+    .custom-item {
+        flex-direction: column;
+        padding: 1rem 0.5rem;
     }
 }

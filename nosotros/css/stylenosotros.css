@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: "Quicksand", sans-serif serif;
+    font-family: "Afacad Flux", serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
@@ -46,7 +46,7 @@ nav {
 .menu a li {
     text-decoration: none; 
     color: #ffffff; 
-    font-family: "Montserrat", sans-serif;
+    font-family: "Afacad Flux", serif;
     font-size: 1.2rem; 
     font-weight:500; 
     padding: 0.5rem 1rem; 
@@ -100,13 +100,13 @@ nav {
     line-height: 2;
 }
 .text-overlay h2 {
-    font-family: "Montserrat", sans-serif;  
-    font-weight: 700;
+    font-family: "Afacad Flux", serif;
+    font-weight: 200;
     font-size: 4rem; 
     margin-bottom: 0.5rem;
 }
 .text-overlay p {
-    font-family:"Montserrat", sans-serif; 
+    font-family: "Afacad Flux", serif;
     font-weight: 300;   
     font-size: 1.4rem; 
     margin-top: 0.5rem;
@@ -135,12 +135,14 @@ nav {
     height: auto;
     margin-right: 20px;
     border-radius: 30px; 
-    border: 2px solid gold;
-}
+    border: 3px solid transparent;
+    background-image: linear-gradient(white, white),linear-gradient(45deg, #ffc919, #f5e65d,#726128, #ffc919, #f5e65d, #fcc102);
+    background-origin: border-box;
+    background-clip: content-box, border-box; }
 .compromiso-container .textocompromiso {
     max-width: 60%;
     color: #273037; 
-    font-family: "Montserrat", sans-serif; 
+    font-family: "Afacad Flux", serif;
     font-weight: 200;    
     margin-top: 0.5rem;
     text-align: justify;
@@ -150,7 +152,6 @@ nav {
     margin-bottom: 1.5rem; 
     text-align: right; 
 }
-
 /*NUESTRA MISION*/
 .seccionblanca {
     display: flex;
@@ -174,12 +175,14 @@ nav {
     height: auto;
     margin-left: 20px;
     border-radius: 30px; 
-    border: 2px solid gold; 
-}
+    border: 3px solid transparent;
+    background-image: linear-gradient(white, white),linear-gradient(45deg, #ffc919, #f5e65d,#726128, #ffc919, #f5e65d, #fcc102);
+    background-origin: border-box;
+    background-clip: content-box, border-box; }
 .textmision {
     max-width: 60%;
     color: #273037; 
-    font-family: "Montserrat", sans-serif; 
+    font-family: "Afacad Flux", serif;
     font-weight: 200;   
     font-size: 1.4rem; 
     margin-top: 0.5rem;
@@ -219,16 +222,19 @@ nav {
     box-sizing: border-box;
 }
 #mezquita-img-unique {
-    width: 400px !important; 
-    height: auto !important;
-    margin-right: 40px !important;
-    border-radius: 30px !important; 
-    border: 2px solid gold !important; 
+    width: 400px; 
+    height: auto ;
+    margin-right: 40px ;
+    border-radius: 30px ; 
+    border: 3px solid transparent;
+    background-image: linear-gradient(white, white),linear-gradient(45deg, #ffc919, #f5e65d,#726128, #ffc919, #f5e65d, #fcc102);
+    background-origin: border-box;
+    background-clip: content-box, border-box;    
 }
 .texto-mezquita {
     max-width: 60%;
     color: #273037; 
-    font-family: "Montserrat", sans-serif; 
+    font-family: "Afacad Flux", serif;
     font-weight: 200;   
     font-size: 1.4rem; 
     margin-top: 0.5rem;
@@ -252,7 +258,7 @@ nav {
     text-align: center;
 }
 .servicios-container {
-    font-family: "Montserrat", sans-serif; 
+    font-family: "Afacad Flux", serif;
     font-weight: 200;   
     font-size: 1rem; 
     margin-top: 0.5rem;
@@ -283,7 +289,7 @@ nav {
     padding: 60px;
 }
 .titulo-ceo {
-    font-family: "Montserrat", sans-serif; 
+    font-family: "Afacad Flux", serif;
     font-size: 2rem;
     color: #273037;
     position: absolute;
@@ -299,7 +305,7 @@ nav {
     border-radius: 30px;
 }
 .Vanina p {
-    font-family: "Montserrat", sans-serif; 
+    font-family: "Afacad Flux", serif;
     text-align: justify;
     color: #273037;
     font-size: 1.2rem;
@@ -313,12 +319,12 @@ nav {
     padding: 10px;
     margin-left: 250px;
     color: #273037;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Afacad Flux", serif;
     font-weight: 300;
+    font-size: 20px;
     text-align: justify;
-    line-height: 1.5;
+    line-height: 1.8;
 }
-
 .ceo-img {
     max-width: 250px;
     height: auto;
@@ -328,30 +334,73 @@ nav {
 }
 /*MAPA*/
 .ubicacion {
-    text-align: center;
-    max-width: 1200px;
-    width: 100%;
-    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #ffffff; 
+    padding: 20px;
 }
 .ubicacion h2 {
-    text-align: start;
-    font-size: 2.5rem;
-    color: #273037; 
-    margin-bottom: 20px;
+    font-family: "Afacad Flux", serif;
+    font-size: 28px;
+    color: #1d2731; 
 }
 .ubicacion p {
-    text-align: start;
-    font-size: 1.2rem;
-    color: #273037; 
-    margin-bottom: 20px;
+    font-family: "Afacad Flux", serif;
+    font-size: 24px;
+    margin: 5px 0;
+    color: #1d2731; 
 }
 .map-img {
-    width: 100%; 
-    height: 600px; 
-    border: none;  
-    border-radius: 2px;
-    display: block;
-    margin: 0 auto;
+    border-radius: 0 20px 20px 0;
+    border: 3px solid transparent;
+    background-image: linear-gradient(white, white),linear-gradient(45deg, #ffc919, #f5e65d,#726128, #ffc919, #f5e65d, #fcc102);
+    background-origin: border-box;
+    background-clip: content-box, border-box;    
+    width: 800px;
+    height: 200px; 
+}
+.contacto {
+    color: #ffffff;
+    font-family: "Afacad Flux", serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.contacto i {
+    margin-right: 8px; 
+}
+.info-container {
+    background-color: #1d2731; 
+    color: #ffffff; 
+    padding: 20px;
+    border-radius: 35px; 
+    width: 300px;
+    margin-right: -25px; 
+    z-index: 1;
+}
+.info-container h2 {
+    color: #ffffff; 
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.info-container p {
+    color: #ffffff; 
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.info-container ul {
+    list-style: none;
+    padding: 0;
+}
+.info-container li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.info-container i {
+    margin-right: 10px;
+    font-size: 18px; /* Ajusta según tus iconos */
 }
 /*PARA CONTACTARSE*/
 .contacto {
@@ -362,6 +411,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     max-width: 100%;
     margin: 0 auto;
     color: #273037;
@@ -369,66 +419,118 @@ nav {
 }
 .text-contacto{
     max-width: 70%;
-    margin: 0 auto;
+    margin: auto;
+    padding: 20px;
     text-align: justify;
 }
 .contacto h2 {
+    font-family: "Afacad Flux", serif;
     font-size: 2.5rem;
+    font-weight: 400;
     margin-bottom: 1rem;
-    line-height: 1.8;
-    text-align: center;
+    text-align: left;
 }
 .contacto p {
+    font-family: "Afacad Flux", serif;
     font-size: 1.5rem;
+    font-weight: 200;
     margin: 10px 0;
-    line-height: 1.6;
     text-align: justify;
 }
-.contact-button { 
-    display: block; 
-    margin: 20px auto; 
-    padding: 10px 20px; 
+.contact-button {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    text-decoration: none; 
+    border: none;
+    color: #273037; 
+    font-family: "Afacad Flux", serif;
     font-size: 1.2rem; 
-    color: white; 
-    background-color: #273037; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer;
     transition: color 0.3s ease;
-}
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    }
 .contact-button:hover {
-    color: #f0c26c;
+    color: #f0c26c; 
+    }
+.contact-button::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 40px; 
+    padding: 2px; 
+    background: linear-gradient(135deg, #d4af37, #f0c26c, #d4af37, #f0e68c, #d4af37); 
+    background-size: 300%; 
+    mask: linear-gradient(#d4af37 0 0) content-box, linear-gradient(#f0e68c 0 0); 
+    -webkit-mask: linear-gradient(#d4af37 0 0) content-box, linear-gradient(#f0e68c 0 0); 
+    mask-composite: exclude;
+    transition: opacity 0.3s ease, background-position 0.5s ease; 
+    background-position: 0% 50%; 
+    opacity: 0;
+    }
+.contact-button:hover::before {
+    opacity: 1; 
+    background-position: 100% 50%; 
 }
 
-/* Media Queries para Pantallas de Escritorio */
-@media (min-width: 1024px) {
-    .compromiso-section { padding: 60px 40px; }
-    .textocompromiso h2 { font-size: 2rem;}
-    .textocompromiso p { font-size: 1.4rem;}
-}
-
-/* Media Queries para Pantallas Notebooks */
-@media (max-width: 1024px) and (min-width: 768px) {
-    .compromiso-section { padding: 40px 20px;}
-    .compromiso-img { width: 35%;}
-    .textocompromiso h2 { font-size: 1.7rem;}
-    .textocompromiso p { font-size: 1rem;}
-}
-
-/* Media Queries para Pantallas Móviles */
-@media (max-width: 767px) {
-    .compromiso-container {
+/* Media queries para hacerlo responsive */
+@media (max-width: 768px) {
+    .imagen-blanca-con-lineas img {
+        width: 100%;
+        height: auto;
+    }
+    .text-overlay {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+    .text-overlay h2 {
+        font-size: 2.5rem;
+    }
+    .compromiso-container, .mision-estrategia-container, .estrategia-mezquita {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 1rem;}
-    .compromiso-img {width: 80%;}
-    .textocompromiso {
-        margin-left: 0;
+        padding: 15px;
+    }
+    .compromiso-img, .mision-img, #mezquita-img-unique {
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+    .textocompromiso, .textmision, .texto-mezquita {
+        padding: 0;
         max-width: 100%;
-        padding: 0 20px;}
-    .textocompromiso h2 { font-size: 2rem; }
-    .textocompromiso p {
-        font-size: 1.4rem;
-        margin: 0;}
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .servicios-container h2, .text-overlay h2, .texto-mezquita h2 {
+        font-size: 1.8rem;
+    }
+    .servicios-container p, .text-contacto p, .textocompromiso p, .textmision p {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+    .ceo-vanina {
+        flex-direction: column;
+        padding: 30px;
+    }
+    .ceo-img {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .titulo-ceo {
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.5rem;
+    }
+    .map-img {
+        width: 100%;
+        height: auto;
+    }
 }
