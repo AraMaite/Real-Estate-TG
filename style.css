@@ -10,9 +10,9 @@ body {
     font-style: normal;
     margin: 0;
     padding: 0;
-    background-color: #273037;
 }
 header {
+    background-color: #273037; 
     padding: 1rem 0;
 }
 /*NAV*/
@@ -46,9 +46,9 @@ nav {
 .menu a li {
     text-decoration: none; 
     color: #ffffff; 
-    font-family: "Afacad Flux", serif;
-    font-size: 1.5rem; 
-    font-weight: 400; 
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem; 
+    font-weight:500; 
     padding: 0.5rem 1rem; 
     display: inline-block;
     transition: color 0.3s ease;
@@ -63,7 +63,7 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    border-radius: 40px; 
+    border-radius: 20px; 
     padding: 2px; 
     background: linear-gradient(135deg, #d4af37, #f0c26c, #d4af37, #f0e68c, #d4af37); 
     background-size: 300%; 
