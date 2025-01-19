@@ -310,7 +310,6 @@ nav {
 .news-articles-container {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     margin-top: 45px;
     gap: 30px;
 }
