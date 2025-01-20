@@ -83,33 +83,36 @@ nav {
 .imagen-blanca-con-lineas {
     position: relative;
     text-align: center; 
+    height: 800px;
 }
 .imagen-blanca-con-lineas img {
     width: 100%;
-    height: auto;
+    height:100%;
     object-fit: cover;
 }
 .text-overlay {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%); 
     color: #1b2934; 
     width: 80%;
-    max-width: 1200px;
+    max-width: 1100px;
     line-height: 2;
+    margin: 0;
+    padding: 0;
 }
 .text-overlay h2 {
     font-family: "Afacad Flux", serif;
     font-weight: 200;
-    font-size: 4rem; 
-    margin-bottom: 0.5rem;
+    font-size: 3rem; 
+    margin-bottom: 0.5rem 0;
 }
 .text-overlay p {
     font-family: "Afacad Flux", serif;
     font-weight: 300;   
     font-size: 1.4rem; 
-    margin-top: 0.5rem;
+    margin-top: 0.5rem 0;
     text-align: justify;
 }
 /*NUESTRO COMPROMISO*/
@@ -141,10 +144,11 @@ nav {
     background-clip: content-box, border-box;
 }
 .compromiso-container .textocompromiso {
-    max-width: 60%;
+    max-width: 80%;
     color: #273037; 
     font-family: "Afacad Flux", serif;
-    font-weight: 200;    
+    font-weight: 200;  
+    font-size: 1.5rem;
     margin-top: 0.5rem;
     text-align: justify;
     padding-left: 20px; 
