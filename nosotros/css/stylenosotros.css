@@ -138,7 +138,8 @@ nav {
     border: 3px solid transparent;
     background-image: linear-gradient(white, white),linear-gradient(45deg, #ffc919, #f5e65d,#726128, #ffc919, #f5e65d, #fcc102);
     background-origin: border-box;
-    background-clip: content-box, border-box; }
+    background-clip: content-box, border-box;
+}
 .compromiso-container .textocompromiso {
     max-width: 60%;
     color: #273037; 
