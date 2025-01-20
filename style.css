@@ -1,15 +1,12 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 body {
     font-family: "Afacad Flux", serif;
     font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    margin: 0;
-    padding: 0;
+    font-weight: normal;
+    font-style: normal
 }
 header {
     background-color: #273037; 
@@ -156,9 +153,7 @@ nav {
 }
 .texto p {
     font-family: "Afacad Flux", serif;
-    font-optical-sizing: auto;
     font-weight: 200;
-    font-style: normal;
     font-size: 1.5rem;
     color: #273037; 
 }
@@ -254,11 +249,11 @@ nav {
     flex-direction: row;
 }
 .promo-image img {
+    max-width: 100%;
     border-radius: 25px; 
     border: 2px solid #FFD700;
     width: 500px;
-    height: 450px;
-    max-width: 100%;
+    height: auto;
 }
 .promo-text {
     order: 1;
@@ -373,9 +368,7 @@ nav {
 /* Seccion de prefuntas frecuentes*/
 .faq {
     font-family: "Afacad Flux", serif;
-    font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;
     color: #273037;
 }
 .faq h2 {
@@ -416,6 +409,7 @@ nav {
     transition: max-heigth 0.3s, border-color 0.3 ease, transform 0.3s ease;
     overflow: hidden;
     max-height: 200px;
+    box-sizing: border-box;
 }
 .faq-item.open { 
     max-height: 900px;
@@ -469,9 +463,7 @@ nav {
 /*Footer*/
 footer {
     font-family: "Afacad Flux", serif;
-    font-optical-sizing: auto;
     font-weight: weight;
-    font-style: normal;
 }
 .footer-container {
     background: white url('path-to-your-background-image.jpg') no-repeat center center fixed; 
@@ -551,15 +543,19 @@ footer {
 
 
 /* Media Query para tabletas */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .container-header {
-        padding: 0 20px;
+        display: initial;
     }
     .logo {
         height: 50px;
     }
+    nav {
+        justify-content: initial;
+        padding: 0.5rem;
+    }
     .menu {
-        flex-direction: row;
+        gap: 2rem;
         justify-content: center;
     }
     .menu li {
@@ -578,15 +574,27 @@ footer {
     .recuadro1, .recuadro2, .recuadro3 {
         width: 50%;
     }
+    .city-image{
+        padding: 0;
+        display: initial;
+    }
+    .promo-image{
+        max-width: 0%;
+    }
     .texto h2 {
         font-size: 2.5rem;
     }
     .img-ciudad {
-        width: 400px;
+        width: 300px;
+        height: 300px;
+        margin: 0;
     }
     .info-box {
         padding: 30px;
         max-width: 75%;
+        background-color: transparent;
+        margin: auto;
+        border-left: 2px solid #FFD700;
     }
     .buttons {
         grid-template-columns: repeat(2, 1fr);
@@ -603,10 +611,10 @@ footer {
         max-width: 60%;
     }
     .content-principal p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .content-logo {
-        max-width: 30%;
+        max-width: 0%;
     }
     .logo-dorado {
         width: 85%;
@@ -623,13 +631,16 @@ footer {
     }
     .text-tarjeta {
         width: 90%;
-        height: auto;
     }
     .text-tarjeta p {
         font-size: 0.9em;
     }
+    .faq-grid{
+        display: initial;
+    }
     .faq h2 {
         font-size: 2.5rem;
+        margin-left: -1rem;
     }
     .faq-text {
         font-size: 1.3em;
@@ -640,7 +651,7 @@ footer {
 }
 
 /* Media Query para escritorio */
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
     .container-header {
         padding: 0 50px;
     }
@@ -648,7 +659,7 @@ footer {
         height: 70px;
     }
     .menu {
-        gap: 2rem;
+        gap: 2.5rem;
     }
     .menu li {
         font-size: 1.3rem;
@@ -672,10 +683,14 @@ footer {
     }
     .img-ciudad {
         width: 500px;
+        margin-left: 2rem;
     }
     .info-box {
         padding: 40px;
         max-width: 70%;
+        background-color: white;
+        margin: auto;
+        border-left: 2px solid #FFD700;
     }
     .buttons {
         grid-template-columns: repeat(2, 1fr);
