@@ -155,12 +155,13 @@ nav {
     margin-right: 20px;
     border-radius: 30px; 
     border: 3px solid transparent;
-    background-image: linear-gradient(white, white),linear-gradient(45deg, #ffc919, #f5e65d,#726128, #ffc919, #f5e65d, #fcc102);
+    background-image: linear-gradient(white, white),linear-gradient(135deg, #d4af37, #f0c26c, #d4af37, #f0e68c, #d4af37);
     background-origin: border-box;
     background-clip: content-box, border-box;
 }
-.compromiso-container .textocompromiso {
-    max-width: 80%;
+.compromiso-container .texto1 {
+    max-width: 100%;
+    box-sizing: border-box;
     color: #273037; 
     font-family: "Afacad Flux", serif;
     font-weight: 200;  
@@ -169,9 +170,11 @@ nav {
     text-align: justify;
     padding-left: 20px; 
 }
-.textocompromiso h2 {
+.texto1 h2 {
+    font-family: "Afacad Flux", serif;
+    font-weight: 200;  
     margin-bottom: 1.5rem; 
-    text-align: right; 
+    text-align: left;
 }
 /*NUESTRA MISION*/
 .seccionblanca {
@@ -192,37 +195,33 @@ nav {
     box-sizing: border-box; 
 }
 .mision-img {
-    width: 450px; 
+    width: 450px;
+    max-width: 100%;
+    box-sizing: border-box; 
     height: auto;
     margin-left: 20px;
     border-radius: 30px; 
     border: 3px solid transparent;
-    background-image: linear-gradient(white, white),linear-gradient(45deg, #ffc919, #f5e65d,#726128, #ffc919, #f5e65d, #fcc102);
+    background-image: linear-gradient(white, white),linear-gradient(135deg, #d4af37, #f0c26c, #d4af37, #f0e68c, #d4af37);
     background-origin: border-box;
     background-clip: content-box, border-box; }
 .textmision {
-    max-width: 60%;
+    max-width: 100%;
+    box-sizing: border-box;
     color: #273037; 
     font-family: "Afacad Flux", serif;
-    font-weight: 200;   
-    font-size: 1.4rem; 
+    font-weight: 200;  
+    font-size: 1.5rem;
     margin-top: 0.5rem;
     text-align: justify;
+    padding-right: 20px; 
 }
 .textocompromiso h2,
 .textmision h2 {
-    font-weight: 250; 
-    text-align: right;
-    margin-bottom: 1rem;
-}
-.textocompromiso,
-.textmision {
-    padding-left: 20px;
-    padding-right: 20px; 
-}
-.textocompromiso p,
-.textmision p {
-    margin-bottom: 1.5rem; 
+    font-family: "Afacad Flux", serif;
+    font-weight: 200;  
+    margin-bottom: 1.2rem; 
+    text-align: right; 
 }
 /*EXCELENCIA Y ATENCION*/
 .seccionblanca {
@@ -248,16 +247,17 @@ nav {
     margin-right: 40px ;
     border-radius: 30px ; 
     border: 3px solid transparent;
-    background-image: linear-gradient(white, white),linear-gradient(45deg, #ffc919, #f5e65d,#726128, #ffc919, #f5e65d, #fcc102);
+    background-image: linear-gradient(white, white),linear-gradient(135deg, #d4af37, #f0c26c, #d4af37, #f0e68c, #d4af37);
     background-origin: border-box;
     background-clip: content-box, border-box;    
 }
 .texto-mezquita {
-    max-width: 60%;
+    max-width: 100%;
+    box-sizing: border-box;
     color: #273037; 
     font-family: "Afacad Flux", serif;
-    font-weight: 200;   
-    font-size: 1.4rem; 
+    font-weight: 200;  
+    font-size: 1.5rem;
     margin-top: 0.5rem;
     text-align: justify;
     padding-left: 20px; 
@@ -301,11 +301,12 @@ nav {
 /*VANINA*/
 .ceo-section {
     background-color: #ffffff;
-    margin-top: -70px;
+    margin-top: -110px;
 }
 .ceo-vanina {
     display: flex;
     align-items: center;
+    
     max-width: 1200px;
     margin: 60px auto;
     padding: 60px;
@@ -316,10 +317,11 @@ nav {
     color: #273037;
     position: absolute;
     font-weight: 300; 
-    left: 250px;
+    left: 350px;
     margin-top: 65px;
 }
 .Vanina {
+    margin-left: 80px;
     padding: 40px;
     color: #273037;
     border: 2px solid gold;
@@ -340,6 +342,7 @@ nav {
     max-width: 70%;
     padding: 10px;
     margin-left: 250px;
+    margin-top: -30px;
     color: #273037;
     font-family: "Afacad Flux", serif;
     font-weight: 300;
@@ -380,7 +383,7 @@ nav {
     background-image: linear-gradient(white, white),linear-gradient(45deg, #ffc919, #f5e65d,#726128, #ffc919, #f5e65d, #fcc102);
     background-origin: border-box;
     background-clip: content-box, border-box;    
-    width: 800px;
+    width: 600px;
     height: 200px; 
 }
 .contacto {
@@ -637,5 +640,8 @@ footer {
     .map-img {
         width: 100%;
         height: auto;
+    }
+    .footer-container {
+        padding: 40px;
     }
 }
