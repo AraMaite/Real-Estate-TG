@@ -127,7 +127,7 @@ nav {
 .content-logo {
     max-width: 20%;
     position: relative;
-    left: -100px;
+    left: -70px;
 }
 .logo-dorado {
     width: 100%;
@@ -206,7 +206,6 @@ nav {
     margin-top: 0;
     margin-left: -1px; 
 }
-/* Estilos para el recuadro con botones */
 .info-box {
     background-color: #FFFFFF; 
     border: 2px solid  #FFD700; 
@@ -251,6 +250,7 @@ nav {
     font-family: "Afacad Flux", serif;
     font-size: 1.1em;
 }
+
 /*HOTEL EN ISLA*/
 .promo-section {
     display: flex;
@@ -282,22 +282,29 @@ nav {
     order: 1;
     max-width: 600px;
     color: #273037;
-    margin-left: 50px;
+    margin-left: 90px;
 }
 .promo-text p {
     margin: 0;
 }
 
 /*NEWS*/ 
-.news-section {
-    display: flex;
-    flex-direction: column;
+#news{
     align-items: center;
     gap: 3rem;
     position: relative;
     padding: 60px 20px; 
+    width: 100%;
     background-image: url(/inicio/images/FONDO\ WEB\ -THORNE\ GLOBAL.jpg);
     background-size: 100%; 
+}
+.news-section p {
+    font-family: "Afacad Flux", serif;
+    margin: 0;
+    text-align: justify;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.5rem;
 }
 .news-section h1 {
     display: flex-start;
@@ -311,76 +318,49 @@ nav {
     text-align: left;
     margin-left: 0;
 }
-.news-section p {
-    font-family: "Afacad Flux", serif;
-    font-size: 1.7em; 
-    text-align: justify;
-    color: #273037;  
-    z-index: 2; 
-    position: relative;
-}
 .news-articles-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 45px;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    width: 100%;
+    margin-top: 80px;
+    margin-left: 80px;
+    border-image: 4px solid linear-gradient(a) 1;
+
 }
-.text-tarjeta { 
-    width: 18rem;
-    height: 18rem;
-    background-size: cover;
-    display: flex;
-    align-items: end;
+.text-tarjeta {
     position: relative;
-    z-index: 2;
-    margin: 10px;
     border-radius: 20px;
-}  
-.text-tarjeta::before, .text-tarjeta::after {
-    content: "";
+}
+.text-tarjeta img {
+    width: 320px;
+    height: 320px;
+    border-radius: 30px ; 
+    border: 4px solid transparent;
+    background-image: linear-gradient(white, white),linear-gradient(135deg, #d4af37, #f0c26c, #d4af37, #f0e68c, #d4af37);
+    background-origin: border-box;
+    background-clip: content-box, border-box;    
+}
+.titulonota {
     position: absolute;
-    background-color: #d4af37;
-    border-radius: 15px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(255, 252, 252, 0.6); 
+    color: #273037;
+    text-align: justify;
+    font-size: 0.8rem;
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px;
 }
-.text-tarjeta::before {
-    bottom: -10px;
-    left: -10px;
-    width: 10px;
-    height: 90%;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+a.nota {
+    line-height: 0.9;
+    text-decoration: none;
+    word-spacing: -1px;
+    letter-spacing: -2px; 
 }
-.text-tarjeta::after {
-    bottom: -10px;
-    left: -5px;
-    width: 95%;
-    height: 10px;
-    background: linear-gradient(to left, white, #f0c26c, #d4af37);
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-.text-tarjeta p { 
-    font-family: "Afacad Flux", serif;
-    color: black;
-    line-height: 1;
-    font-size: large;
-} 
-.text-tarjeta a {
-    font-family: "Afacad Flux", serif;
-    width: 10rem;
-    height: 10rem;
-    position: absolute;
-    z-index: 1;
-}
-.news-image1 { 
-    background-image: linear-gradient(to top, white, rgba(255, 255, 255, 0)), url(/inicio/images/foto\ vanina\ noticia\ 2.jpeg);
-}  
-.news-image2 { 
-    background-image: linear-gradient(to top, white, rgba(255, 255, 255, 0)), url(/inicio/images/dubai\ foto\ noticia.jpg);
-}  
-.news-image3 {
-    background-image: linear-gradient(to top, white, rgba(255, 255, 255, 0)), url(/inicio/images/vanina\ -noticia.jpg);
-}
+
 /* Seccion de prefuntas frecuentes*/
 .faq {
     font-family: "Afacad Flux", serif;
@@ -400,6 +380,7 @@ nav {
     width: 100%;
     text-align: left;
     margin-left: 0;
+    margin-top: 130px;
 }
 .faq-text{
     font-family: "Afacad Flux", serif;
@@ -561,178 +542,94 @@ footer {
 
 
 
-/* Media Query para tabletas */
-@media (min-width: 768px) {
+@media (max-width: 600px) {
     .container-header {
-        padding: 0 20px;
-    }
-    .logo {
-        height: 50px;
+        flex-direction: column;
+        padding: 0 10px;
+        text-align: center;
     }
     .menu {
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        padding-right: 0;
     }
-    .menu li {
-        font-size: 1.1rem;
-    }
-    .fondo-de-lineas {
-        padding: 60px 40px;
-    }
-    .content-principal {
-        padding: 40px 30px;
-        max-width: 70%;
-    }
-    .recuadros-inferiores {
-        gap: 15px;
-    }
-    .recuadro1, .recuadro2, .recuadro3 {
-        width: 50%;
-    }
-    .texto h2 {
-        font-size: 2.5rem;
-    }
-    .img-ciudad {
-        width: 400px;
-    }
-    .info-box {
-        padding: 30px;
-        max-width: 75%;
-    }
-    .buttons {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .button img {
-        width: 50px;
+    .logo {
+        height: 40px;
     }
     .content {
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        padding: 20px;
     }
     .content-principal {
-        padding: 50px 40px;
-        max-width: 60%;
+        padding: 20px;
+        max-width: 100%;
+        right: 0;
     }
-    .content-principal p {
-        font-size: 1.5rem;
+    .promo-text {
+        margin-left: 0;
+        font-size: 1rem;
     }
-    .content-logo {
-        max-width: 30%;
-    }
-    .logo-dorado {
-        width: 85%;
-    }
-    .news-section h1 {
-        font-size: 2.5rem;
-    }
-    .news-section p {
-        font-size: 1.2em;
-    }
-    .news-articles-container {
-        flex-direction: column;
-        gap: 15px;
-    }
-    .text-tarjeta {
-        width: 90%;
+    .promo-image img {
+        width: 100%;
         height: auto;
     }
-    .text-tarjeta p {
-        font-size: 0.9em;
+    .news-articles-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-left: 0;
+    }
+    .buttons {
+        grid-template-columns: 1fr;
     }
     .faq h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        margin-top: 50px;
     }
-    .faq-text {
-        font-size: 1.3em;
-    }
-    .faq-item p, .faq-item h3 {
-        font-size: 1rem;
+    .faq-item {
+        padding: 15px;
     }
 }
 
-/* Media Query para escritorio */
-@media (min-width: 1200px) {
+/* Adaptaciones para tablets */
+@media (min-width: 601px) and (max-width: 900px) {
     .container-header {
-        padding: 0 50px;
+        flex-wrap: wrap;
+        gap: 1rem;
     }
-    .logo {
-        height: 70px;
+    .menu {
+        gap: 1.5rem;
     }
+    .content-principal {
+        max-width: 80%;
+        right: 0;
+        padding: 40px;
+    }
+    .recuadros-inferiores {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .recuadro1, .recuadro2, .recuadro3 {
+        width: 100%;
+    }
+    .faq-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+/* Adaptaciones para escritorio */
+@media (min-width: 901px) {
     .menu {
         gap: 2rem;
     }
-    .menu li {
-        font-size: 1.3rem;
-    }
-    .fondo-de-lineas {
-        padding: 80px 50px;
-    }
     .content-principal {
         padding: 60px 70px;
-        max-width: 55%;
+        max-width: 60%;
+        right: -90px;
     }
-    .recuadros-inferiores {
-        gap: 20px;
-    }
-    .recuadro1, .recuadro2, .recuadro3 {
-        font-size: 1.5rem;
-        width: 20%;
-    }
-    .texto h2 {
-        font-size: 3rem;
-    }
-    .img-ciudad {
-        width: 500px;
-    }
-    .info-box {
-        padding: 40px;
-        max-width: 70%;
-    }
-    .buttons {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .button img {
-        width: 60px;
-    }
-    .fondo-de-lineas {
-        padding: 80px 50px;
-    }
-    .content-principal {
-        padding: 60px 70px;
-        max-width: 55%;
-    }
-    .content-principal p {
-        font-size: 1.8rem;
-    }
-    .content-logo {
-        max-width: 25%;
-    }
-    .logo-dorado {
-        width: 80%;
-    }
-    .news-section {
-        padding: 80px 40px;
-    }
-    .news-section h1 {
-        font-size: 4.5rem;
-    }
-    .news-section p {
-        font-size: 2em;
+    .promo-text {
+        margin-left: 90px;
     }
     .news-articles-container {
-        gap: 40px;
-    }
-    .text-tarjeta {
-        width: 20rem;
-        height: 20rem;
-    }
-    .faq h2 {
-        font-size: 4.5rem;
-    }
-    .faq-text {
-        font-size: 1.8em;
-    }
-    .footer-container {
-        padding: 40px;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
