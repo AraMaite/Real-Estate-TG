@@ -300,6 +300,8 @@ nav {
 }
 .news-section p {
     font-family: "Afacad Flux", serif;
+    font-weight: 200;
+    font-size: 5rem; 
     margin: 0;
     text-align: justify;
     font-weight: 200;
@@ -540,96 +542,3 @@ footer {
     margin-left: auto;
 }
 
-
-
-@media (max-width: 600px) {
-    .container-header {
-        flex-direction: column;
-        padding: 0 10px;
-        text-align: center;
-    }
-    .menu {
-        flex-direction: column;
-        gap: 1rem;
-        padding-right: 0;
-    }
-    .logo {
-        height: 40px;
-    }
-    .content {
-        flex-direction: column;
-        padding: 20px;
-    }
-    .content-principal {
-        padding: 20px;
-        max-width: 100%;
-        right: 0;
-    }
-    .promo-text {
-        margin-left: 0;
-        font-size: 1rem;
-    }
-    .promo-image img {
-        width: 100%;
-        height: auto;
-    }
-    .news-articles-container {
-        grid-template-columns: 1fr;
-        gap: 15px;
-        margin-left: 0;
-    }
-    .buttons {
-        grid-template-columns: 1fr;
-    }
-    .faq h2 {
-        font-size: 2rem;
-        margin-top: 50px;
-    }
-    .faq-item {
-        padding: 15px;
-    }
-}
-
-/* Adaptaciones para tablets */
-@media (min-width: 601px) and (max-width: 900px) {
-    .container-header {
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-    .menu {
-        gap: 1.5rem;
-    }
-    .content-principal {
-        max-width: 80%;
-        right: 0;
-        padding: 40px;
-    }
-    .recuadros-inferiores {
-        flex-direction: column;
-        gap: 15px;
-    }
-    .recuadro1, .recuadro2, .recuadro3 {
-        width: 100%;
-    }
-    .faq-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-}
-
-/* Adaptaciones para escritorio */
-@media (min-width: 901px) {
-    .menu {
-        gap: 2rem;
-    }
-    .content-principal {
-        padding: 60px 70px;
-        max-width: 60%;
-        right: -90px;
-    }
-    .promo-text {
-        margin-left: 90px;
-    }
-    .news-articles-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
