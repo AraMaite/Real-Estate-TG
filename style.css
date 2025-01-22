@@ -127,7 +127,7 @@ nav {
 .content-logo {
     max-width: 20%;
     position: relative;
-    left: -100px;
+    left: -70px;
 }
 .logo-dorado {
     width: 100%;
@@ -206,7 +206,6 @@ nav {
     margin-top: 0;
     margin-left: -1px; 
 }
-/* Estilos para el recuadro con botones */
 .info-box {
     background-color: #FFFFFF; 
     border: 2px solid  #FFD700; 
@@ -251,6 +250,7 @@ nav {
     font-family: "Afacad Flux", serif;
     font-size: 1.1em;
 }
+
 /*HOTEL EN ISLA*/
 .promo-section {
     display: flex;
@@ -282,22 +282,28 @@ nav {
     order: 1;
     max-width: 600px;
     color: #273037;
-    margin-left: 50px;
+    margin-left: 90px;
 }
 .promo-text p {
     margin: 0;
 }
 
 /*NEWS*/ 
-.news-section {
-    display: flex;
-    flex-direction: column;
+#news{
     align-items: center;
     gap: 3rem;
     position: relative;
     padding: 60px 20px; 
+    width: 100%;
     background-image: url(/inicio/images/FONDO\ WEB\ -THORNE\ GLOBAL.jpg);
     background-size: 100%; 
+}
+.news-section p {
+    font-family: "Afacad Flux", serif;
+    font-weight: 200;
+    font-size: 10rem; 
+    margin: 0;
+    text-align: justify;
 }
 .news-section h1 {
     display: flex-start;
@@ -311,76 +317,37 @@ nav {
     text-align: left;
     margin-left: 0;
 }
-.news-section p {
-    font-family: "Afacad Flux", serif;
-    font-size: 1.7em; 
-    text-align: justify;
-    color: #273037;  
-    z-index: 2; 
-    position: relative;
-}
 .news-articles-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 45px;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 80px;
 }
-.text-tarjeta { 
-    width: 18rem;
-    height: 18rem;
-    background-size: cover;
-    display: flex;
-    align-items: end;
+.text-tarjeta {
     position: relative;
-    z-index: 2;
-    margin: 10px;
+}
+.text-tarjeta img {
+    width: 300px;
+    height: 300px;
     border-radius: 20px;
-}  
-.text-tarjeta::before, .text-tarjeta::after {
-    content: "";
-    position: absolute;
-    background-color: #d4af37;
-    border-radius: 15px;
 }
-.text-tarjeta::before {
-    bottom: -10px;
-    left: -10px;
-    width: 10px;
-    height: 90%;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-.text-tarjeta::after {
-    bottom: -10px;
-    left: -5px;
-    width: 95%;
-    height: 10px;
-    background: linear-gradient(to left, white, #f0c26c, #d4af37);
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-.text-tarjeta p { 
+.titulonota, a {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 20px;
     font-family: "Afacad Flux", serif;
-    color: black;
-    line-height: 1;
-    font-size: large;
-} 
-.text-tarjeta a {
-    font-family: "Afacad Flux", serif;
-    width: 10rem;
-    height: 10rem;
-    position: absolute;
-    z-index: 1;
+    word-spacing: 1px;
+    font-size: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.7);
+
 }
-.news-image1 { 
-    background-image: linear-gradient(to top, white, rgba(255, 255, 255, 0)), url(/inicio/images/foto\ vanina\ noticia\ 2.jpeg);
-}  
-.news-image2 { 
-    background-image: linear-gradient(to top, white, rgba(255, 255, 255, 0)), url(/inicio/images/dubai\ foto\ noticia.jpg);
-}  
-.news-image3 {
-    background-image: linear-gradient(to top, white, rgba(255, 255, 255, 0)), url(/inicio/images/vanina\ -noticia.jpg);
-}
+
+
 /* Seccion de prefuntas frecuentes*/
 .faq {
     font-family: "Afacad Flux", serif;
@@ -400,6 +367,7 @@ nav {
     width: 100%;
     text-align: left;
     margin-left: 0;
+    margin-top: 130px;
 }
 .faq-text{
     font-family: "Afacad Flux", serif;
