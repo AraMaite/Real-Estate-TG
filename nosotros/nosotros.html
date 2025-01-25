@@ -26,9 +26,17 @@
                         <li>Servicios</li>
                     </a>
                 </ul>
-            </nav>
+            </nav><div class="hamburger">☰</div>
             <a href="contacto" class="contact-button">Contacto</a>
         </div>
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const menu = document.querySelector('.menu');
+        
+            hamburger.addEventListener('click', () => {
+                menu.classList.toggle('active'); 
+            });
+        </script>   
     </header>
     <main>
         <section id="TG" class="imagen-blanca-con-lineas">
@@ -44,7 +52,7 @@
         </section>
         <section class="seccionblanca">
             <div class="compromiso-container"> 
-                <img src="/nosotros/images/foto dubai - nuestro compromiso.jpg" alt="compromiso edificio dubai" class="compromiso-img">
+                <img src="/nosotros/images/imagen1.jpeg" alt="compromiso edificio dubai" class="compromiso-img">
                 <div class="texto1">
                     <h2>NUESTRO COMPROMISO</h2>
                     <p>En Thorne Global, somos el socio de confianza para inversores y emprendedores locales e internacionales que buscan aprovechar las extraordinarias oportunidades que ofrece Dubái. Con un historial comprobado y un enfoque personalizado, guiamos a nuestros clientes en cada paso del proceso de inversión, asegurando una entrada estratégica y efectiva a este mercado en constante crecimiento.</p>
@@ -60,12 +68,12 @@
                     <p>Con una vasta experiencia en inversiones inmobiliarias y estrategias de mercado, nuestro equipo aporta conocimientos inigualables para evaluar el potencial de cada proyecto. No solo brindamos asesoramiento, sino que ofrecemos insights prácticos para optimizar tu estrategia de inversión, destacar en un mercado competitivo y navegar el entorno normativo con seguridad.</p>
                     <p>Además, nuestras soluciones personalizadas van más allá de la asesoría básica. Facilitamos el acceso a proyectos exclusivos, identificamos las oportunidades más rentables y conectamos a nuestros clientes con las mejores opciones para maximizar su retorno en el mercado de Dubái y la región en general.</p>
                 </div>
-                <img src="/nosotros/images/dubai edificio - mision y estrategia.jpg" alt="Burj Al Arab en Dubái" class="mision-img">
+                <img src="/nosotros/images/imagen2.jpeg" alt="Burj Al Arab en Dubái" class="mision-img">
             </div>
         </section>
         <section class="seccionblanca">
                 <div class="estrategia-mezquita">
-                    <img src="/nosotros/images/dubai edificio - exelencia y atencion.jpg" alt="compromiso edificio dubai"id="mezquita-img-unique">
+                    <img src="/nosotros/images/imagen3.jpg" alt="compromiso edificio dubai"id="mezquita-img-unique">
                     <div class="texto-mezquita">
                         <h2>Excelencia y Atención</h2>
                         <p>En Thorne Global, priorizamos la excelencia, la confianza y la eficiencia en cada interacción. Nuestro equipo de consultores altamente capacitados está preparado para abordar incluso los desafíos más complejos, asegurando que siempre estés respaldado por expertos en los que puedes confiar.</p>

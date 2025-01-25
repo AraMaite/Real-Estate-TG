@@ -22,6 +22,13 @@ header {
     justify-content: space-between; 
     padding: 0 15px;
 }
+.hamburger {
+    display: none; 
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.8rem; 
+    margin-right: 15px;
+}
 .logo {
     height: 50px; 
     padding-left: 25px;
@@ -195,8 +202,8 @@ nav {
 .img-ciudad {
     border: 2px solid #FFD700;
     border-radius: 25px;
-    width: 500px;  
-    height: 500px;
+    width: 700px;  
+    height: 450px;
     margin-left: 200px;
     z-index: 1;
 }
@@ -537,9 +544,6 @@ footer {
 .footer-bottom p { 
     margin-left: auto;
 }
-
-
-
 /* Media Query para tabletas */
 @media (min-width: 768px) {
     .container-header {
@@ -549,11 +553,13 @@ footer {
         height: 50px;
     }
     .menu {
-        flex-direction: row;
-        justify-content: center;
+        display: flex; 
     }
-    .menu li {
-        font-size: 1.1rem;
+    .hamburger {
+        display: none; 
+    }
+    .contact-button {
+        display: block; 
     }
     .fondo-de-lineas {
         padding: 60px 40px;
@@ -628,7 +634,6 @@ footer {
         font-size: 1rem;
     }
 }
-
 /* Media Query para escritorio */
 @media (min-width: 1200px) {
     .container-header {
@@ -638,10 +643,13 @@ footer {
         height: 70px;
     }
     .menu {
-        gap: 2rem;
+        display: flex; 
     }
-    .menu li {
-        font-size: 1.3rem;
+    .hamburger {
+        display: none; 
+    }
+    .contact-button {
+        display: block; 
     }
     .fondo-de-lineas {
         padding: 80px 50px;
@@ -713,5 +721,153 @@ footer {
     }
     .footer-container {
         padding: 40px;
+    }
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+    .menu {
+        flex-direction: column;
+        display: none;
+        gap: 1rem;
+        padding: 0;
+        align-items: center; 
+    }
+    .hamburger {
+        display: inline-block;
+        position: relative;
+    }
+    nav {
+        display: flex;
+        justify-content: flex-end; 
+        align-items: center;
+    }
+    .container-header {
+        padding: 0 20px;
+    }
+    .logo {
+        height: 50px;
+    }
+    .contact-button {
+        margin-left: 0; 
+    }
+    .menu.active {
+        display: flex;
+    }
+    .recuadros-inferiores {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .recuadro1, .recuadro2, .recuadro3 {
+        width: 90%;
+        text-align: center;
+    }
+    .texto, .content-logo, .content-principal {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .content {
+        flex-direction: column; 
+    }
+    .content-principal {
+        right: 0; 
+        max-width: 90%;
+    }
+    .content-logo {
+        left: 0;
+        max-width: 50%;
+    }
+    .content-principal p {
+        font-size: 2rem; 
+    }
+    .texto h2 {
+        font-size: 2rem;
+    }
+    .texto p {
+        font-size: 1rem;
+    }
+    .city-image {
+        display: flex;
+        flex-wrap: nowrap; 
+        align-items: center;
+        justify-content: space-between;
+        gap: 0; 
+        padding: 50px 0; 
+    }
+    .img-ciudad {
+        width: 40%; 
+        height: auto;
+        margin-left: 0; 
+    }
+    .info-box {
+        max-width: 50%; 
+        padding: 15px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center;
+        margin: 0;
+    }
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 8px; 
+        width: 100%; 
+        justify-content: center;
+    }
+    .button img {
+        width: 35px; 
+        height: auto; 
+    }
+    .button p {
+        font-size: 0.8em; 
+        text-align: center; 
+    }
+    .promo-section {
+        flex-direction: column; 
+        padding: 20px; 
+    }
+    .promo-text {
+        font-size: 1rem; 
+        margin-left: 0; 
+        max-width: 100%; 
+    }
+    .promo-image {
+        order: 1; 
+        flex: 1;
+        margin-top: 50px; 
+    }
+    .promo-image img {
+        width: 100%; 
+        height: auto; 
+    }
+    #news {
+        padding: 30px 10px; /* Reducimos el padding para pantallas pequeñas */
+    }
+    .news-section p {
+        font-size: 2.5rem;
+        text-align: justify;
+    }
+    .news-section h1 {
+        font-size: 2rem; /* Reducimos el tamaño del título */
+        text-align: left; /* Centra el título en pantallas pequeñas */
+    }
+    .news-articles-container {
+        grid-template-columns: 1fr; /* Los artículos se apilan en una sola columna */
+        margin-left: 0; /* Elimina el margen izquierdo */
+    }
+    .text-tarjeta {
+        max-width: 100%; /* La tarjeta ocupa todo el ancho en dispositivos móviles */
+    }
+    .text-tarjeta img {
+        width: 100%; /* La imagen ocupa todo el ancho */
+        height: auto;
+    }
+    .titulonota {
+        font-size: 1rem; /* Ajusta el tamaño del texto */
+        padding: 10px;
     }
 }
