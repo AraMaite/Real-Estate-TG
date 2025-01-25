@@ -22,6 +22,13 @@ header {
     justify-content: space-between; 
     padding: 0 15px;
 }
+.hamburger {
+    display: none; 
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.8rem; 
+    margin-right: 15px;
+}
 .logo {
     height: 50px; 
     padding-left: 25px;
@@ -46,7 +53,7 @@ nav {
 .menu a li {
     text-decoration: none; 
     color: #ffffff; 
-    font-family: "Afacad Flux", serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.2rem; 
     font-weight:500; 
     padding: 0.5rem 1rem; 
@@ -256,7 +263,6 @@ nav {
     font-size: 0.9rem;
     line-height: 1.5;
 }
-
 /*COLUMNA DE SERVICIOS*/
 .investment-section {
     background-image: url(/inicio/images/FONDO\ WEB\ -THORNE\ GLOBAL.jpg);
@@ -411,6 +417,28 @@ footer {
 }
 /* Media queries para dispositivos medianos (tabletas) */
 @media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+    .hamburger {
+        display: block;
+    }
+    .menu {
+        display: none; /* Oculta el menú inicialmente en pantallas pequeñas */
+    }
+    nav {
+        display: flex;
+        justify-content: flex-end; 
+        align-items: center;
+    }
+    .container-header {
+        padding: 0 20px;
+    }
+    .logo {
+        height: 50px;
+    }
     .investment-container {
         flex-direction: column;
         align-items: center;
@@ -426,6 +454,33 @@ footer {
     .investment-text {
         padding-left: 0;
         text-align: center;
+    }
+    .servicio {
+        flex: 1 1 100%; /* Ocupa todo el ancho */
+        max-width: 100%; /* Asegura que no se pase del ancho de la pantalla */
+        padding: 15px; /* Reduce el padding */
+        margin: 10px auto; /* Añade separación entre los recuadros */
+        min-height: 150px; /* Ajusta la altura mínima */
+    }
+
+    .servicio h3 {
+        font-size: 1.5rem; /* Reduce el tamaño del título */
+        text-align: justify; /* Cambia a justificado */
+    }
+
+    .servicio p {
+        font-size: 1rem; /* Reduce el tamaño del texto */
+        text-align: justify; /* Justifica el texto */
+        line-height: 1.5; /* Ajusta la altura de línea */
+    }
+
+    #cuadrado3 {
+        text-align: justify; /* Mantiene el texto justificado */
+    }
+
+    #cuadrado4 {
+        font-size: 1.2rem; /* Ajusta el tamaño del texto */
+        text-align: justify; /* Cambia a justificado */
     }
 }
 

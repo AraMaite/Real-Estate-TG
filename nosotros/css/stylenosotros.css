@@ -595,7 +595,7 @@ footer {
 
 
 /* Media queries para hacerlo responsive */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     nav {
         flex-direction: column;
         justify-content: center;
@@ -623,25 +623,95 @@ footer {
     .logo {
         height: 50px;
     }
-    #TG {
-        height: auto; /* Ajustamos la altura en pantallas pequeñas */
+
+    .imagen-blanca-con-lineas,
+    .seccionblanca {
+        flex-direction: column; 
+        padding: 15px; 
+        text-align: justify;
     }
-    .text-overlay {
-        width: 100%; /* El texto ocupa el 100% del ancho de la pantalla */
-        max-width: none; /* Eliminamos el límite de max-width */
-        top: 40%; /* Ajustamos la posición para que esté mejor centrado */
-        transform: translate(-50%, -40%);
-        padding: 0 15px; /* Reducimos el padding en pantallas más pequeñas */
+    .compromiso-img,
+    .mision-img,
+    #mezquita-img-unique {
+        width: 350px; 
+        height: 350px; 
+        margin: 0 auto 15px; 
     }
-    .text-overlay h2 {
-        font-size: 2rem; /* Reducimos el tamaño del título */
+    .text-overlay,
+    .texto1,
+    .textmision,
+    .texto-mezquita {
+        width: 100%; 
+        font-size: 1rem; 
+        line-height: 1.6; 
+        padding: 0 10px; 
     }
-    .text-overlay p {
-        font-size: 1.2rem; /* Reducimos el tamaño del texto */
+    .text-overlay h2,
+    .texto1 h2,
+    .textmision h2,
+    .texto-mezquita h2 {
+        font-size: 1.8rem; 
+        text-align: center;
+        margin-bottom: 10px;
     }
-    #TG img {
-        width: 100%; /* La imagen ocupa todo el ancho de la pantalla */
-        height: auto;
+    .text-overlay p,
+    .texto1 p,
+    .textmision p,
+    .texto-mezquita p {
+        font-size: 0.9rem; 
     }
+    .compromiso-container,
+    .mision-estrategia-container,
+    .estrategia-mezquita {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .compromiso-container .texto1,
+    .mision-estrategia-container .textmision,
+    .estrategia-mezquita .texto-mezquita {
+        margin: 0;
+        padding: 10px 0;
+    }
+    .ceo-section {
+        margin-top: -50px; 
+        padding: 15px; 
+    }
+    .ceo-vanina {
+        flex-direction: column;
+        max-width: 90%; 
+        margin: 20px auto; 
+        padding: 20px; 
+    }
+    .titulo-ceo {
+        font-size: 1.5rem; 
+        font-weight: 300; 
+        left: 0; 
+        text-align: center; 
+        position: static; 
+        margin: 10px 0; 
+    }
+    .Vanina {
+        margin: 10px auto; 
+        padding: 15px; 
+        font-size: 1rem; 
+        border-width: 1px; 
+    }
+    .Vanina p {
+        font-size: 0.9rem; 
+        line-height: 1.5; 
+    }
+    .texto-vanina p {
+        max-width: 100%; 
+        margin: 10px auto; 
+        padding: 10px; 
+        font-size: 0.9rem; 
+        text-align: justify; 
+    }
+    .ceo-img {
+        max-width: 150px;
+        margin: 20px auto; 
+        display: block;
+    }
+
 }
 
