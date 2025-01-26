@@ -202,8 +202,8 @@ nav {
 .img-ciudad {
     border: 2px solid #FFD700;
     border-radius: 25px;
-    width: 700px;  
-    height: 450px;
+    width: 800px;  
+    height: 400px;
     margin-left: 200px;
     z-index: 1;
 }
@@ -228,8 +228,8 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    max-width: 70%; 
-    min-height: 350px;
+    max-width: 60%; 
+    min-height: 100px;
 }
 .buttons {
     display: grid;
@@ -244,18 +244,16 @@ nav {
     text-align: center; 
     gap: 10px;
     color: #273037;
-    border: 2px solid transparent;
-    border-radius: 5px;
     padding: 10px; 
 }
 .button img {
-    width: 60px; 
+    width: 40px; 
     height: auto;
 }
 .button p {
     margin: 0;
     font-family: "Afacad Flux", serif;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 /*HOTEL EN ISLA*/
@@ -276,8 +274,8 @@ nav {
 .promo-image img {
     border-radius: 25px; 
     border: 2px solid #FFD700;
-    width: 500px;
-    height: 450px;
+    width: 550px;
+    height: 350px;
     max-width: 100%;
 }
 .promo-text {
