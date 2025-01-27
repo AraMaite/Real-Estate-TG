@@ -632,12 +632,12 @@ footer {
         font-size: 1rem;
     }
 }
-@media (min-width: 1200px) and (max-width: 834px){
+@media (min-width: 1000px) {
     .container-header {
         padding: 0 50px;
     }
     .logo {
-        height: 70px;
+        height: 50px;
     }
     .menu {
         display: flex; 
@@ -748,7 +748,8 @@ footer {
     }
     .logo-dorado {
         margin-top: 60px;
-        height: 300px; 
+        width: 300px;
+        height: 250px; 
     }
     .contact-button {
         margin-left: 0; 
@@ -794,14 +795,18 @@ footer {
     }
     .img-ciudad,
     .info-box {
-        width: 80%; 
+        width: 100%; 
         margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
     .buttons {
         grid-template-columns: repeat(2, 1fr); 
         grid-template-rows: repeat(2, auto);
-        border-left: 2px solid gold;
-        border-radius: 10px;
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+        gap: 10px;
     }
     .promo-section {
         flex-direction: column; 
