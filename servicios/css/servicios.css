@@ -429,7 +429,7 @@ footer {
     margin-left: auto;
 }
 /* Media queries para dispositivos medianos (tabletas) */
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 834px) {
     nav {
         flex-direction: column;
         justify-content: center;

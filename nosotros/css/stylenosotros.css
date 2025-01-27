@@ -761,7 +761,6 @@ footer {
     .text-overlay {
         margin-top: 85px;
     }
-
     .texto1,
     .textmision,
     .texto-mezquita {
@@ -838,6 +837,65 @@ footer {
         max-width: 150px;
         margin: 20px auto; 
         display: block;
+    }
+    .ubicacion {
+        flex-direction: column; 
+        gap: 10px;
+        padding: 15px;
+        text-align: center; 
+    }
+    .ubicacion h2 {
+        font-size: 1.8rem; 
+    }
+    .ubicacion p {
+        font-size: 1.2rem; 
+    }
+    .map-img {
+        width: 90%; 
+        height: auto; 
+        border-radius: 20px; 
+        margin: 0 auto; 
+    }
+    .info-container {
+        width: 90%; 
+        margin: 0 auto 20px; 
+        padding: 15px;
+        border-radius: 20px;
+    }
+    .info-container h2 {
+        font-size: 1.5rem; 
+        margin-bottom: 10px;
+    }
+    .info-container p, .info-container li {
+        font-size: 1rem; 
+    }
+    .info-container i {
+        font-size: 1.2rem; 
+    }
+    .contacto {
+        padding: 15px; 
+        text-align: center; 
+    }
+    .text-contacto {
+        max-width: 90%; 
+        padding: 10px; 
+        text-align: justify;
+    }
+    .contacto h2 {
+        font-size: 2rem; 
+        text-align: center;
+    }
+    .contacto p {
+        font-size: 1.2rem; 
+        line-height: 1.4; 
+    }
+    .contact-button {
+        font-size: 1rem; 
+        padding: 8px 15px; 
+        margin: 10px auto; 
+    }
+    .contact-button::before {
+        border-radius: 20px; 
     }
 }
 
