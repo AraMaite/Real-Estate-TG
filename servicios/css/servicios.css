@@ -46,6 +46,19 @@ nav {
     display: flex; 
     gap: 2.5rem; 
 }
+/* Mostrar menú cuando tenga la clase 'active' */
+.menu.active {
+    display: flex;
+}
+/* Botón de hamburguesa */
+.hamburger {
+    display: none; /* Oculto por defecto */
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #fff;
+    font-size: 1.8rem; 
+    margin-right: 15px; 
+}
 .menu li {
     display: inline-block;
     position: relative; 
@@ -416,17 +429,22 @@ footer {
     margin-left: auto;
 }
 /* Media queries para dispositivos medianos (tabletas) */
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 834px) {
     nav {
         flex-direction: column;
         justify-content: center;
         padding: 1rem 0;
     }
-    .hamburger {
-        display: block;
-    }
     .menu {
-        display: none; /* Oculta el menú inicialmente en pantallas pequeñas */
+        flex-direction: column;
+        display: none;
+        gap: 1rem;
+        padding: 0;
+        align-items: center; 
+    }
+    .hamburger {
+        display: inline-block;
+        position: relative;
     }
     nav {
         display: flex;

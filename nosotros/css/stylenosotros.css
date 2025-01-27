@@ -22,13 +22,6 @@ header {
     justify-content: space-between; 
     padding: 0 15px;
 }
-.hamburger {
-    display: none; 
-    cursor: pointer;
-    color: #fff;
-    font-size: 1.8rem; 
-    margin-right: 15px;
-}
 .logo {
     height: 50px; 
     padding-left: 25px;
@@ -45,6 +38,19 @@ nav {
     margin: 0;
     display: flex; 
     gap: 2.5rem; 
+}
+/* Mostrar menú cuando tenga la clase 'active' */
+.menu.active {
+    display: flex;
+}
+/* Botón de hamburguesa */
+.hamburger {
+    display: none; /* Oculto por defecto */
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #fff;
+    font-size: 1.8rem; 
+    margin-right: 15px; 
 }
 .menu li {
     display: inline-block;
@@ -592,10 +598,7 @@ footer {
 .footer-bottom p { 
     margin-left: auto;
 }
-
-
-/* Media queries para hacerlo responsive */
-@media (max-width: 768px) {
+@media (min-width: 1200px) and (max-width: 834px){
     nav {
         flex-direction: column;
         justify-content: center;
@@ -623,7 +626,6 @@ footer {
     .logo {
         height: 50px;
     }
-
     .imagen-blanca-con-lineas,
     .seccionblanca {
         flex-direction: column; 
@@ -712,6 +714,188 @@ footer {
         margin: 20px auto; 
         display: block;
     }
-
+}
+@media (min-width: 320px) and (max-width: 834px){
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+    .menu {
+        flex-direction: column;
+        display: none;
+        gap: 1rem;
+        padding: 0;
+        align-items: center; 
+    }
+    .hamburger {
+        display: inline-block;
+        position: relative;
+    }
+    nav {
+        display: flex;
+        justify-content: flex-end; 
+        align-items: center;
+    }
+    .container-header {
+        padding: 0 20px;
+    }
+    .logo {
+        height: 50px;
+    }
+    .imagen-blanca-con-lineas,
+    .seccionblanca {
+        flex-direction: column; 
+        padding: 15px; 
+        text-align: justify;
+    }
+    .compromiso-img {
+        margin-top: 85px;
+    }
+    .mision-img,
+    #mezquita-img-unique {
+        width: 350px; 
+        height: 350px; 
+        margin: 0 auto 15px; 
+    }
+    .text-overlay {
+        margin-top: 85px;
+    }
+    .texto1,
+    .textmision,
+    .texto-mezquita {
+        width: 100%; 
+        font-size: 1rem; 
+        line-height: 1.6; 
+        padding: 0 10px; 
+    }
+    .text-overlay h2 {
+        margin-bottom: 15px;
+    }
+    .text-overlay h2,
+    .texto1 h2,
+    .textmision h2,
+    .texto-mezquita h2 {
+        font-size: 1.8rem; 
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .text-overlay p,
+    .texto1 p,
+    .textmision p,
+    .texto-mezquita p {
+        font-size: 0.9rem; 
+    }
+    .compromiso-container,
+    .mision-estrategia-container,
+    .estrategia-mezquita {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .compromiso-container .texto1,
+    .mision-estrategia-container .textmision,
+    .estrategia-mezquita .texto-mezquita {
+        margin: 0;
+        padding: 10px 0;
+    }
+    .ceo-section {
+        margin-top: -50px; 
+        padding: 15px; 
+    }
+    .ceo-vanina {
+        flex-direction: column;
+        max-width: 90%; 
+        margin: 20px auto; 
+        padding: 20px; 
+    }
+    .titulo-ceo {
+        font-size: 1.5rem; 
+        font-weight: 300; 
+        left: 0; 
+        text-align: center; 
+        position: static; 
+        margin: 10px 0; 
+    }
+    .Vanina {
+        margin: 10px auto; 
+        padding: 15px; 
+        font-size: 1rem; 
+        border-width: 1px; 
+    }
+    .Vanina p {
+        font-size: 0.9rem; 
+        line-height: 1.5; 
+    }
+    .texto-vanina p {
+        max-width: 100%; 
+        margin: 10px auto; 
+        padding: 10px; 
+        font-size: 0.9rem; 
+        text-align: justify; 
+    }
+    .ceo-img {
+        max-width: 150px;
+        margin: 20px auto; 
+        display: block;
+    }
+    .ubicacion {
+        flex-direction: column; 
+        gap: 10px;
+        padding: 15px;
+        text-align: center; 
+    }
+    .ubicacion h2 {
+        font-size: 1.8rem; 
+    }
+    .ubicacion p {
+        font-size: 1.2rem; 
+    }
+    .map-img {
+        width: 90%; 
+        height: auto; 
+        border-radius: 20px; 
+        margin: 0 auto; 
+    }
+    .info-container {
+        width: 90%; 
+        margin: 0 auto 20px; 
+        padding: 15px;
+        border-radius: 20px;
+    }
+    .info-container h2 {
+        font-size: 1.5rem; 
+        margin-bottom: 10px;
+    }
+    .info-container p, .info-container li {
+        font-size: 1rem; 
+    }
+    .info-container i {
+        font-size: 1.2rem; 
+    }
+    .contacto {
+        padding: 15px; 
+        text-align: center; 
+    }
+    .text-contacto {
+        max-width: 90%; 
+        padding: 10px; 
+        text-align: justify;
+    }
+    .contacto h2 {
+        font-size: 2rem; 
+        text-align: center;
+    }
+    .contacto p {
+        font-size: 1.2rem; 
+        line-height: 1.4; 
+    }
+    .contact-button {
+        font-size: 1rem; 
+        padding: 8px 15px; 
+        margin: 10px auto; 
+    }
+    .contact-button::before {
+        border-radius: 20px; 
+    }
 }
 
